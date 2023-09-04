@@ -1,0 +1,384 @@
+2023-09-04 13:28:24.3175|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "f7373796-9566-405c-92c3-2fd645c7618f",
+  "trace_time": "04/09/2023 13:28:24",
+  "trace_side": "cs",
+  "min_version_code": "",
+  "current_version_code": "",
+  "current_agent_version": ""
+} 
+
+2023-09-04 13:28:24.4820|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"f7373796-9566-405c-92c3-2fd645c7618f"},"trace_id":"WUvadxAymWvnP5giGM5dqlQ1eFFW15h2Q4VdxtrHC08Bc89crupcj0wKmV23oJCOkAc7tNb5z1dRJxvjMu6mgbXd","trace_time":"04\/09\/2023 13:28:24","trace_side":"sc"} 
+
+2023-09-04 13:28:26.3729|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "9ad9561e-1a66-4f89-bf84-f81dc4b7a325",
+  "trace_time": "04/09/2023 13:28:26",
+  "trace_side": "cs",
+  "min_version_code": "",
+  "current_version_code": "",
+  "current_agent_version": ""
+} 
+
+2023-09-04 13:28:26.4109|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"9ad9561e-1a66-4f89-bf84-f81dc4b7a325"},"trace_id":"DtjhcWM8JooBHc41ceqJwOx17nTrEVMhmyw5oS0oaRsA7eTnGGLdr54ThSUEDcDH9OFLeY","trace_time":"04\/09\/2023 13:28:26","trace_side":"sc"} 
+
+2023-09-04 13:29:53.0808|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "AyFUbS2mdwDxGuEkxIh655oRn4YVp2Nic38DFm5MSBw2jXLTIu1ngE6kohBzAIkacfPsFwbANoDf984bXVFmu8HcZ6PYNa74S7mhqUyObu5LE"
+  },
+  "trace_id": "34c9ec43-922f-4680-b82e-d079419598ce",
+  "trace_time": "04/09/2023 13:29:53",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:29:53.1375|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":true,"message":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng.","trace_request_id":"34c9ec43-922f-4680-b82e-d079419598ce"},"trace_id":"WtURUHUpWKJgnx4rD9RdmKNKCR6iVFplqccAFThqF5Gfl3SGl3SJARYkeodIA3IVG78pZXTDPgF7ReTzQJyBpwfyh9","trace_time":"04\/09\/2023 13:29:53","trace_side":"sc"} 
+
+2023-09-04 13:29:56.8543|TRACE|
+ Thoát chương trình 
+
+2023-09-04 13:30:42.3350|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "04e7fc31-c2ae-4f54-85da-3e788bbf1ecd",
+  "trace_time": "04/09/2023 13:30:42",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:30:44.4030|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "717341de-f756-430c-8584-4f38dd69e7c3",
+  "trace_time": "04/09/2023 13:30:44",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:30:49.1463|ERROR|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-04 13:30:59.9862|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "a5dbba65-24c7-494f-9e92-04c594ea0890",
+  "trace_time": "04/09/2023 13:30:59",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:01.5569|INFO|
+ Connection has been closed. 
+
+2023-09-04 13:31:03.0229|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:03.0229|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "f4271bc7-c6fd-4777-a1e0-309ed1bf0f09",
+  "trace_time": "04/09/2023 13:31:02",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:04.1207|INFO|
+ Connection has been closed. 
+
+2023-09-04 13:31:08.8894|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:08.8894|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "7612ad19-998b-4bc3-8724-b3dd485124f0",
+  "trace_time": "04/09/2023 13:31:08",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:09.9916|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:09.9916|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "277d98bf-80a3-429d-8453-3f6a3648a0ad",
+  "trace_time": "04/09/2023 13:31:09",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:14.1138|INFO|
+ Connection has been closed. 
+
+2023-09-04 13:31:20.5689|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:20.5689|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "70126443-86c9-4826-b494-773bc0f97861",
+  "trace_time": "04/09/2023 13:31:20",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:21.9106|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:21.9106|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "0ff9ee6a-91da-4c72-9d96-8aec457bdfb8",
+  "trace_time": "04/09/2023 13:31:21",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:24.6240|ERROR|
+ send messageThe current state of the connection is not Open. 
+
+2023-09-04 13:31:24.6240|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "9a2fd2e3-1be8-444b-98b9-b4686c42c630",
+  "trace_time": "04/09/2023 13:31:24",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:30.8847|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "f67552f2-cd64-492a-93d1-9a7064dbb68f",
+  "trace_time": "04/09/2023 13:31:30",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:31.3338|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"f67552f2-cd64-492a-93d1-9a7064dbb68f"},"trace_id":"8hVjjQWIpULCPjmjTS4Pu2rKzfJuiaVmqIBw8rMpOd0btIhQ4jPyQHk2DgyYSXWFUrmsgkWcK50tFpjrciBtRBoFI7J44Qm2K5Vc9S0Q3c0lHRzX09YO6Ko1lm4","trace_time":"04\/09\/2023 13:31:31","trace_side":"sc"} 
+
+2023-09-04 13:31:32.1358|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "8795a26b-1dd7-4aaa-8645-341aff9ab5a7",
+  "trace_time": "04/09/2023 13:31:32",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:32.2241|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"8795a26b-1dd7-4aaa-8645-341aff9ab5a7"},"trace_id":"f3Qu3kFZ3uPtAtpadUBvGkkkT67FUi8TTLNsGoxlGSkfVHWBp9KCJDu3tSZrNS3kgKEDO6x99gDoGUMtV2AA0emax5XSJ8b7e6wbbLmyA","trace_time":"04\/09\/2023 13:31:32","trace_side":"sc"} 
+
+2023-09-04 13:31:33.4299|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "ecfa7af5-64f3-40d7-867b-7029fad91442",
+  "trace_time": "04/09/2023 13:31:33",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:33.4698|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"ecfa7af5-64f3-40d7-867b-7029fad91442"},"trace_id":"tdSvBLq9pZ3AAh8Yapewi5JLAuP7XEoK2rFkROKWMhpaT9AnuB71XZkGW9fZAhzaeANlClwCbNn5j","trace_time":"04\/09\/2023 13:31:33","trace_side":"sc"} 
+
+2023-09-04 13:31:34.6162|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "ab554d5a-f8a0-4a0b-b473-188c2d8b92fa",
+  "trace_time": "04/09/2023 13:31:34",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:34.7007|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"ab554d5a-f8a0-4a0b-b473-188c2d8b92fa"},"trace_id":"T9S30t0grWfADgfq5xnr6l94Uuy64NcmvqvBb1z3lhAmYQdxjff5Ro731tDzcrwESlIOkm7HuLZ9xMaHCnMwhMt6jKqWd1qpzGYN8Ckd","trace_time":"04\/09\/2023 13:31:34","trace_side":"sc"} 
+
+2023-09-04 13:31:35.7333|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "eaa73891-3129-4ed9-b3bb-1ff6aacea31f",
+  "trace_time": "04/09/2023 13:31:35",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:35.8238|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"eaa73891-3129-4ed9-b3bb-1ff6aacea31f"},"trace_id":"6hutQgZPUip3pcOoha3xPTqQmIbYc4QNnQqO4EEcM8mCDTZRjuQWdEatzcZRBka2oGHPVRrcGDBhzw4hAJksIIOKgdTDIMqFpR6gIL5qYq7PatZjJ11CoErTWG","trace_time":"04\/09\/2023 13:31:35","trace_side":"sc"} 
+
+2023-09-04 13:31:38.0966|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "helloman"
+  },
+  "trace_id": "83d2bca3-6458-42bc-b39c-427137963a66",
+  "trace_time": "04/09/2023 13:31:38",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:31:38.1837|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"83d2bca3-6458-42bc-b39c-427137963a66"},"trace_id":"p1Baj4MghUYqxeUMu76Fl4eRcrJSzGqWT58xqUNtuiUJLdu50p5rsVPyJ0Fud3m7uPTK7kLVtdJBkEvkDI","trace_time":"04\/09\/2023 13:31:38","trace_side":"sc"} 
+
+2023-09-04 13:33:40.7149|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "b7fda8db-69b6-478a-a832-ec8eb60d7e98",
+  "trace_time": "04/09/2023 13:33:40",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:33:40.8122|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"b7fda8db-69b6-478a-a832-ec8eb60d7e98"},"trace_id":"F4V5doRrZZUu3H9sfQcdwknzb8sAgUpk1srIwnELrXfnzcLQd9DVKGJa8PeDW72XLb7YnB9v5rIz3PDZKWXeGJJElR1OPccMUaVPJwxKgFXb","trace_time":"04\/09\/2023 13:33:40","trace_side":"sc"} 
+
+2023-09-04 13:33:42.3020|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "5ec23efa-cc67-4434-bf7c-1c9fffb29deb",
+  "trace_time": "04/09/2023 13:33:42",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:33:42.3874|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"5ec23efa-cc67-4434-bf7c-1c9fffb29deb"},"trace_id":"0OyxubZ7v3KNTlEpVqkh8ez0zMuAF9JptGSBslnci8FpmrxwiTNiPGkUl6SqbcQkbkNgBG7FNjMxnokz8EJ98TtdSlH2Gy2y7vMppIsU","trace_time":"04\/09\/2023 13:33:42","trace_side":"sc"} 
+
+2023-09-04 13:33:42.5503|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "2cf69166-df4f-4c8d-afcb-908d129a5a51",
+  "trace_time": "04/09/2023 13:33:42",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-04 13:33:42.6449|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"2cf69166-df4f-4c8d-afcb-908d129a5a51"},"trace_id":"JlCREIWYNAqeqsEVfnwnGbAh9P9pRqWKYDb4xkRLgAGm5pXAS2hAV1U37xGJm2f2tL02OcnrMzNlLb","trace_time":"04\/09\/2023 13:33:42","trace_side":"sc"} 
+

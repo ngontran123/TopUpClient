@@ -1,0 +1,71 @@
+D:\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe.config
+D:\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe
+D:\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.pdb
+D:\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.dll
+D:\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.xml
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.AssemblyReference.cache
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.SuggestedBindingRedirects.cache
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Form1.resources
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Properties.Resources.resources
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Setting.resources
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.GenerateResource.cache
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CoreCompileInputs.cache
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CopyComplete
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.exe
+D:\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.pdb
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\nlog.config
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe.config
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.pdb
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\Guna.UI2.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\Newtonsoft.Json.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\NLog.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\System.Collections.Immutable.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\websocket-sharp.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.xml
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\Newtonsoft.Json.xml
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\NLog.xml
+D:\All data\NaptienMaster\NaptienMaster\bin\Debug\websocket-sharp.xml
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.AssemblyReference.cache
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.SuggestedBindingRedirects.cache
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Form1.resources
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Login.resources
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Properties.Resources.resources
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Setting.resources
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.GenerateResource.cache
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CoreCompileInputs.cache
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CopyComplete
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.exe
+D:\All data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.pdb
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\nlog.config
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe.config
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.exe
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\NaptienMaster.pdb
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\GSMCommServer.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\GSMCommShared.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\GSMCommunication.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\Guna.UI2.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\Newtonsoft.Json.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\NLog.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\PDUConverter.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\System.Collections.Immutable.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\websocket-sharp.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\Krypton.Toolkit.xml
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\Newtonsoft.Json.xml
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\NLog.xml
+D:\Alll data\NaptienMaster\NaptienMaster\bin\Debug\websocket-sharp.xml
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.AssemblyReference.cache
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.SuggestedBindingRedirects.cache
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Form1.resources
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Login.resources
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Properties.Resources.resources
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.Setting.resources
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.GenerateResource.cache
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CoreCompileInputs.cache
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.csproj.CopyComplete
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.exe
+D:\Alll data\NaptienMaster\NaptienMaster\obj\Debug\NaptienMaster.pdb

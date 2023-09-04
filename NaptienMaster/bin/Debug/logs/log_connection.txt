@@ -1,0 +1,33 @@
+2023-09-04 13:28:23.2324|TRACE|
+ Connection has been established. 
+
+2023-09-04 13:29:40.8286|TRACE|
+ Connection has been established. 
+
+2023-09-04 13:29:56.8543|TRACE|
+ Application Exist. 
+
+2023-09-04 13:30:29.1685|TRACE|
+ Connection has been established. 
+
+2023-09-04 13:30:49.1463|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-04 13:31:01.5569|TRACE|
+ There is error during the connection. 
+
+2023-09-04 13:31:04.1207|TRACE|
+ There is error during the connection. 
+
+2023-09-04 13:31:14.1138|TRACE|
+ There is error during the connection. 
+
+2023-09-04 13:31:29.1848|TRACE|
+ Connection has been established. 
+
+2023-09-04 13:33:32.2984|TRACE|
+ Connection has been established. 
+
+2023-09-04 13:35:38.6074|TRACE|
+ Connection has been established. 
+
