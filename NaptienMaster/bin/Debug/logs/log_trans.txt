@@ -382,3 +382,137 @@
 2023-09-04 13:33:42.6449|TRACE|
  {"command":"AUTH_ACTION_REPLY","payload":{"success":false,"message":"Token kh\u00f4ng h\u1ee3p l\u1ec7.","trace_request_id":"2cf69166-df4f-4c8d-afcb-908d129a5a51"},"trace_id":"JlCREIWYNAqeqsEVfnwnGbAh9P9pRqWKYDb4xkRLgAGm5pXAS2hAV1U37xGJm2f2tL02OcnrMzNlLb","trace_time":"04\/09\/2023 13:33:42","trace_side":"sc"} 
 
+2023-09-05 22:39:26.4575|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "96e7050d-af66-4f3a-a440-d43f24fc8295",
+  "trace_time": "05/09/2023 22:39:26",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:28.4973|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "ea6b04a2-9a66-4914-8dfd-97e947b55013",
+  "trace_time": "05/09/2023 22:39:28",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:30.0526|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "8999d935-3890-4396-8c8d-4cc9c8afa3e3",
+  "trace_time": "05/09/2023 22:39:30",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:31.3782|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "8ca2e32d-d65b-4c23-b99e-fce8a81da848",
+  "trace_time": "05/09/2023 22:39:31",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:32.6507|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "434ec61d-a026-4455-b8d2-799e907d88bb",
+  "trace_time": "05/09/2023 22:39:32",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:34.8614|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "49def600-2912-4b20-a55f-7d42e1987d58",
+  "trace_time": "05/09/2023 22:39:34",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:36.4713|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "Nhập token vào đây"
+  },
+  "trace_id": "fd1f6cf0-2025-43bd-85df-bde5f89abba2",
+  "trace_time": "05/09/2023 22:39:36",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:39:38.8995|TRACE|
+ 
+ 
+
+2023-09-05 22:39:39.6111|TRACE|
+ 
+ 
+
+2023-09-05 22:51:38.3315|TRACE|
+ {
+  "command": "AUTH_ACTION",
+  "payload": {
+    "pc_id": "8649A039-0CDF-E711-80C8-9829A64A79EE",
+    "naptien_gsm_token": "AyFUbS2mdwDxGuEkxIh655oRn4YVp2Nic38DFm5MSBw2jXLTIu1ngE6kohBzAIkacfPsFwbANoDf984bXVFmu8HcZ6PYNa74S7mhqUyObu5LE"
+  },
+  "trace_id": "cdc3f6af-78a5-48b5-86fe-f72cd2bb9eca",
+  "trace_time": "05/09/2023 22:51:38",
+  "trace_side": "cs",
+  "min_version_code": "11",
+  "current_version_code": "11",
+  "current_agent_version": "12"
+} 
+
+2023-09-05 22:51:38.3863|TRACE|
+ {"command":"AUTH_ACTION_REPLY","payload":{"success":true,"message":"\u0110\u0103ng nh\u1eadp th\u00e0nh c\u00f4ng.","trace_request_id":"cdc3f6af-78a5-48b5-86fe-f72cd2bb9eca"},"trace_id":"IxFYyuiXcHg1WDRjiQJLPIu5rqYEpuMDOi4yZKWzoWbRsMQFJ9OCVVxlw55LsGuhrbmAnHgYIDATeNq94EdShyCoWBF1Xu6B5F","trace_time":"05\/09\/2023 22:51:38","trace_side":"sc"} 
+
+2023-09-05 22:52:14.4236|TRACE|
+ Thoát chương trình 
+

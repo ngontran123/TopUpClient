@@ -1415,7 +1415,7 @@ namespace NaptienMaster.GSM
                         this._isInfor = false;
                         if (this.Telco == "MOBIFONE")
                         {   
-                            if ((!input.Contains("TKC") && !input.Contains("HSD")) && this.first_request_sim_type!="TT")
+                            if (!input.Contains("TKC") && this.first_request_sim_type!="TT")
                             {
                                 this.SimType = "TS";
                                 this.TKC = "null";

@@ -31,3 +31,12 @@
 2023-09-04 13:35:38.6074|TRACE|
  Connection has been established. 
 
+2023-09-05 22:39:26.1666|TRACE|
+ Connection has been established. 
+
+2023-09-05 22:51:24.0999|TRACE|
+ Connection has been established. 
+
+2023-09-05 22:52:14.4236|TRACE|
+ Application Exit. 
+
