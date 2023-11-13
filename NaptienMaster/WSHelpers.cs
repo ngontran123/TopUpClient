@@ -26,7 +26,7 @@ namespace NaptienMaster
         private WebSocket ws;
         private string data_receive = "";
         private System.Timers.Timer recheck_timer=new System.Timers.Timer();
-        public string login_message = "Mất kết nối tới máy chủ.Vui lòng kiểm tra lại kết nối internet.";
+        public string login_message = "";
         public string login_status = "";
         private static readonly string secret_key = "gf8K2nbP6vP9Z/I7hOEQQRfUYmsqiKngj8IRcK1JPwY=";
         public Form1 instance = Form1.ReturnInstance();
@@ -91,7 +91,7 @@ namespace NaptienMaster
         {
             is_connect = false;
             LoggerManager.LogInfo("Connection has been closed.");
-            LoggerManager.LogConnectTrace("Connection has been disconnected.");
+            LoggerManager.LogConnectTrace($"Connection has been disconnected:{e.Reason}");
         }
 
         private void Ws_OnError(object sender, ErrorEventArgs e)
@@ -110,9 +110,9 @@ namespace NaptienMaster
         {
             try
             {
-                data_receive = aes_crypto.decodeBase64(aes_crypto.Aesp256Decryption(Convert.FromBase64String(e.Data),key,iv));
+                data_receive = aes_crypto.decodeBase64(aes_crypto.Aesp256Decryption(Convert.FromBase64String(e.Data), key, iv));
             }
-            catch(Exception er)
+            catch (Exception er)
             {
                 LoggerManager.LogError("receive"+er.Message);
             }
@@ -195,9 +195,9 @@ namespace NaptienMaster
         {
             try
             {
-                this.ws.Send(aes_crypto.Aesp256Encryption(message,key,iv));
+                this.ws.Send(aes_crypto.Aesp256Encryption(message, key, iv));
             }
-            catch(Exception ex) { LoggerManager.LogError("send message"+ex.Message);}
+            catch (Exception ex) { LoggerManager.LogError("send message"+ex.Message);}
         }
         public void pushLoginToken(string pc_id, string authen_token)
         {
@@ -350,3 +350,4 @@ namespace NaptienMaster
         }
     }
 }
+

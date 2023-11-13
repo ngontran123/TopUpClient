@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.languageComboBox = new Krypton.Toolkit.KryptonComboBox();
+            this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.baudrateList = new Krypton.Toolkit.KryptonComboBox();
@@ -39,128 +41,129 @@
             this.kryptonBreadCrumb1 = new Krypton.Toolkit.KryptonBreadCrumb();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.languageComboBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.baudrateList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
             // 
-            this.kryptonPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.kryptonPanel1, "kryptonPanel1");
+            this.kryptonPanel1.Controls.Add(this.languageComboBox);
+            this.kryptonPanel1.Controls.Add(this.kryptonLabel3);
             this.kryptonPanel1.Controls.Add(this.kryptonButton2);
             this.kryptonPanel1.Controls.Add(this.kryptonButton1);
             this.kryptonPanel1.Controls.Add(this.baudrateList);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel2);
             this.kryptonPanel1.Controls.Add(this.blackList);
             this.kryptonPanel1.Controls.Add(this.kryptonLabel1);
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(498, 368);
-            this.kryptonPanel1.TabIndex = 0;
+            this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(247)))), ((int)(((byte)(201)))));
+            // 
+            // languageComboBox
+            // 
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
+            this.languageComboBox.CornerRoundingRadius = -1F;
+            this.languageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.languageComboBox.DropDownWidth = 121;
+            this.languageComboBox.IntegralHeight = false;
+            this.languageComboBox.Items.AddRange(new object[] {
+            resources.GetString("languageComboBox.Items"),
+            resources.GetString("languageComboBox.Items1"),
+            resources.GetString("languageComboBox.Items2")});
+            this.languageComboBox.Name = "languageComboBox";
+            this.languageComboBox.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            // 
+            // kryptonLabel3
+            // 
+            resources.ApplyResources(this.kryptonLabel3, "kryptonLabel3");
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Values.ExtraText = resources.GetString("kryptonLabel3.Values.ExtraText");
+            this.kryptonLabel3.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel3.Values.ImageTransparentColor")));
+            this.kryptonLabel3.Values.Text = resources.GetString("kryptonLabel3.Values.Text");
             // 
             // kryptonButton2
             // 
+            resources.ApplyResources(this.kryptonButton2, "kryptonButton2");
             this.kryptonButton2.CornerRoundingRadius = -1F;
-            this.kryptonButton2.Location = new System.Drawing.Point(259, 302);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(103, 38);
-            this.kryptonButton2.TabIndex = 5;
-            this.kryptonButton2.Values.Text = "Hủy";
+            this.kryptonButton2.Values.ExtraText = resources.GetString("kryptonButton2.Values.ExtraText");
+            this.kryptonButton2.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonButton2.Values.ImageTransparentColor")));
+            this.kryptonButton2.Values.Text = resources.GetString("kryptonButton2.Values.Text");
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonButton1
             // 
+            resources.ApplyResources(this.kryptonButton1, "kryptonButton1");
             this.kryptonButton1.CornerRoundingRadius = -1F;
-            this.kryptonButton1.Location = new System.Drawing.Point(42, 302);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(103, 38);
-            this.kryptonButton1.TabIndex = 4;
-            this.kryptonButton1.Values.Text = "Lưu";
+            this.kryptonButton1.Values.ExtraText = resources.GetString("kryptonButton1.Values.ExtraText");
+            this.kryptonButton1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonButton1.Values.ImageTransparentColor")));
+            this.kryptonButton1.Values.Text = resources.GetString("kryptonButton1.Values.Text");
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // baudrateList
             // 
+            resources.ApplyResources(this.baudrateList, "baudrateList");
             this.baudrateList.CornerRoundingRadius = -1F;
+            this.baudrateList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.baudrateList.DropDownWidth = 121;
             this.baudrateList.IntegralHeight = false;
             this.baudrateList.Items.AddRange(new object[] {
-            "4800",
-            "9600",
-            "19200",
-            "38400",
-            "57600",
-            "115200",
-            "230400"});
-            this.baudrateList.Location = new System.Drawing.Point(94, 227);
-            this.baudrateList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.GetString("baudrateList.Items"),
+            resources.GetString("baudrateList.Items1"),
+            resources.GetString("baudrateList.Items2"),
+            resources.GetString("baudrateList.Items3"),
+            resources.GetString("baudrateList.Items4"),
+            resources.GetString("baudrateList.Items5"),
+            resources.GetString("baudrateList.Items6")});
             this.baudrateList.Name = "baudrateList";
-            this.baudrateList.Size = new System.Drawing.Size(91, 21);
             this.baudrateList.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.baudrateList.TabIndex = 3;
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(9, 228);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel2, "kryptonLabel2");
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(62, 20);
-            this.kryptonLabel2.TabIndex = 2;
-            this.kryptonLabel2.Values.Text = "Baudrate:";
+            this.kryptonLabel2.Values.ExtraText = resources.GetString("kryptonLabel2.Values.ExtraText");
+            this.kryptonLabel2.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel2.Values.ImageTransparentColor")));
+            this.kryptonLabel2.Values.Text = resources.GetString("kryptonLabel2.Values.Text");
             // 
             // blackList
             // 
-            this.blackList.Location = new System.Drawing.Point(94, 52);
-            this.blackList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.blackList, "blackList");
             this.blackList.Name = "blackList";
-            this.blackList.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Horizontal;
-            this.blackList.Size = new System.Drawing.Size(222, 120);
-            this.blackList.TabIndex = 1;
-            this.blackList.Text = "";
             this.blackList.TextChanged += new System.EventHandler(this.kryptonRichTextBox1_TextChanged);
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(2, 67);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonLabel1, "kryptonLabel1");
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(94, 20);
-            this.kryptonLabel1.TabIndex = 0;
-            this.kryptonLabel1.Values.Text = "Black List Ports:";
+            this.kryptonLabel1.Values.ExtraText = resources.GetString("kryptonLabel1.Values.ExtraText");
+            this.kryptonLabel1.Values.ImageTransparentColor = ((System.Drawing.Color)(resources.GetObject("kryptonLabel1.Values.ImageTransparentColor")));
+            this.kryptonLabel1.Values.Text = resources.GetString("kryptonLabel1.Values.Text");
             // 
             // kryptonBreadCrumb1
             // 
-            this.kryptonBreadCrumb1.AutoSize = false;
-            this.kryptonBreadCrumb1.Location = new System.Drawing.Point(566, 167);
-            this.kryptonBreadCrumb1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            resources.ApplyResources(this.kryptonBreadCrumb1, "kryptonBreadCrumb1");
             this.kryptonBreadCrumb1.Name = "kryptonBreadCrumb1";
             // 
             // 
             // 
-            this.kryptonBreadCrumb1.RootItem.ShortText = "Root";
+            this.kryptonBreadCrumb1.RootItem.ShortText = resources.GetString("kryptonBreadCrumb1.RootItem.ShortText");
             this.kryptonBreadCrumb1.SelectedItem = this.kryptonBreadCrumb1.RootItem;
-            this.kryptonBreadCrumb1.Size = new System.Drawing.Size(6, 6);
-            this.kryptonBreadCrumb1.TabIndex = 1;
             // 
             // Setting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 366);
             this.Controls.Add(this.kryptonBreadCrumb1);
             this.Controls.Add(this.kryptonPanel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Setting";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Setting";
             this.Load += new System.EventHandler(this.Setting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.languageComboBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.baudrateList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonBreadCrumb1)).EndInit();
             this.ResumeLayout(false);
@@ -177,5 +180,7 @@
         private Krypton.Toolkit.KryptonButton kryptonButton1;
         private Krypton.Toolkit.KryptonComboBox baudrateList;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
+        private Krypton.Toolkit.KryptonComboBox languageComboBox;
+        private Krypton.Toolkit.KryptonLabel kryptonLabel3;
     }
 }

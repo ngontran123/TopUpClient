@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using NaptienMaster.Services;
+using Newtonsoft.Json;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,13 @@ namespace NaptienMaster
         /// </summary>
         [STAThread]
         static void Main()
-        { 
+        {
+            LanguageConvert language_convert = new LanguageConvert();
+            string current_language = language_convert.currentLanguageVersion();
+            if(!string.IsNullOrEmpty(current_language) ) 
+            {
+                language_convert.languageConvert(current_language);
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             LoggerManager.InitializeLogger();

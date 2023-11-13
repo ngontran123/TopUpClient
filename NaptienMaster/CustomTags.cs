@@ -136,5 +136,17 @@ namespace NaptienMaster
             }
         }
     }
+    public class LanguageConvertSection :ConfigurationSection
+    {
+        [ConfigurationProperty("language_convert",IsRequired =true)]
+        public string LanguageConvert
+        {
+            get { return (string)this["language_convert"]; }
+            set
+            {
+                this["language_convert"] = value;
+            }
+        }
+    }
     }
 

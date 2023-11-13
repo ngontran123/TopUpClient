@@ -16,6 +16,9 @@ namespace NaptienMaster
     {
         private static Setting instance_setting;
         public Form1 instance = Form1.ReturnInstance();
+        public string current_selected_language="";
+        public Login login_instance = Login.ReturnLoginInstance();
+        public Form1 main_instance=Form1.ReturnInstance();
         public static Setting ReturnInstance()
         {   
             return instance_setting;
@@ -104,6 +107,55 @@ namespace NaptienMaster
             addComPort(this.blackList.Text);
             this.instance.updateSetting();
             instance.blackListPort = this.blackList.Text;
+            string language = this.languageComboBox.SelectedItem.ToString();
+            login_instance.UpdateConfigSetting("language_convert", language, "languageSet");
+            DialogResult dialog;
+            if (language != current_selected_language)
+            { 
+                if (language == "English")
+                {
+                    if (current_selected_language == "Tiếng Việt")
+                    {
+                        dialog = MessageBox.Show("Phần mềm sẽ khởi động lại để áp dụng ngôn ngữ mới", "Đổi ngôn ngữ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else 
+                    {
+                        dialog = MessageBox.Show("软件该从新启动来应用新语言", "改变语言", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                  
+                }
+                else if(language=="中文")
+                {
+                    if (current_selected_language == "Tiếng Việt")
+                    {   
+                        dialog = MessageBox.Show("Phần mềm sẽ khởi động lại để áp dụng ngôn ngữ mới", "Đổi ngôn ngữ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        dialog = MessageBox.Show("The app will be restarted to apply new language", "Change language", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                   
+                }
+                else 
+                {
+                    if (current_selected_language == "English")
+                    {
+                        dialog = MessageBox.Show("The app will be restarted to apply new language", "Change language", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        dialog = MessageBox.Show("软件该从新启动来应用新语言", "改变语言", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                   
+                }
+                if (dialog == DialogResult.OK)
+                {
+                    System.Diagnostics.Process.Start(Application.ExecutablePath);
+                    this.Close();
+                    this.main_instance.Close();
+                }
+
+            }
             this.Close();
         }
 
@@ -115,6 +167,9 @@ namespace NaptienMaster
         private void Setting_Load(object sender, EventArgs e)
         {
             initValue();
+            int language_combobox_index = languageComboBox.Items.IndexOf(login_instance.language);
+            languageComboBox.SelectedIndex = language_combobox_index;
+            current_selected_language = languageComboBox.SelectedItem.ToString();
         }
     }
 }

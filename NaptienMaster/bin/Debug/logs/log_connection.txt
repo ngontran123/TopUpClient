@@ -1,42 +1,2043 @@
-2023-09-04 13:28:23.2324|TRACE|
+2023-09-08 22:01:00.3332|TRACE|
  Connection has been established. 
 
-2023-09-04 13:29:40.8286|TRACE|
- Connection has been established. 
-
-2023-09-04 13:29:56.8543|TRACE|
- Application Exist. 
-
-2023-09-04 13:30:29.1685|TRACE|
- Connection has been established. 
-
-2023-09-04 13:30:49.1463|TRACE|
+2023-09-08 22:01:19.5239|TRACE|
  There is error during the connection:An error has occurred in connecting.. 
 
-2023-09-04 13:31:01.5569|TRACE|
- There is error during the connection. 
+2023-09-08 22:01:50.4909|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
 
-2023-09-04 13:31:04.1207|TRACE|
- There is error during the connection. 
-
-2023-09-04 13:31:14.1138|TRACE|
- There is error during the connection. 
-
-2023-09-04 13:31:29.1848|TRACE|
+2023-09-08 22:02:06.4641|TRACE|
  Connection has been established. 
 
-2023-09-04 13:33:32.2984|TRACE|
+2023-09-08 22:02:55.4994|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-08 22:08:26.6371|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-09-08 22:31:22.8039|TRACE|
  Connection has been established. 
 
-2023-09-04 13:35:38.6074|TRACE|
+2023-09-08 22:39:22.2391|TRACE|
  Connection has been established. 
 
-2023-09-05 22:39:26.1666|TRACE|
+2023-09-08 22:40:12.0525|TRACE|
  Connection has been established. 
 
-2023-09-05 22:51:24.0999|TRACE|
+2023-09-08 22:50:09.2601|TRACE|
  Connection has been established. 
 
-2023-09-05 22:52:14.4236|TRACE|
+2023-09-08 22:50:50.2938|TRACE|
+ Connection has been established. 
+
+2023-09-08 22:51:36.2717|TRACE|
+ Application Exit. 
+
+2023-09-08 22:58:12.6253|TRACE|
+ Connection has been established. 
+
+2023-09-08 22:59:16.5770|TRACE|
+ Connection has been established. 
+
+2023-09-08 23:03:03.2240|TRACE|
+ Connection has been established. 
+
+2023-09-08 23:03:20.3293|TRACE|
+ Connection has been established. 
+
+2023-09-08 23:04:14.8396|TRACE|
+ Application Exit. 
+
+2023-09-08 23:04:22.1366|TRACE|
+ Connection has been established. 
+
+2023-09-08 23:04:30.1438|TRACE|
+ Application Exit. 
+
+2023-09-08 23:12:06.1561|TRACE|
+ Connection has been established. 
+
+2023-09-08 23:12:27.6607|TRACE|
+ Application Exit. 
+
+2023-09-12 10:16:47.2454|TRACE|
+ Connection has been established. 
+
+2023-09-12 10:17:15.7803|TRACE|
+ Connection has been established. 
+
+2023-09-12 10:20:35.6393|TRACE|
+ Connection has been established. 
+
+2023-09-12 10:21:01.6648|TRACE|
+ Connection has been established. 
+
+2023-09-21 10:43:06.6683|TRACE|
+ Connection has been established. 
+
+2023-09-21 10:47:37.5620|TRACE|
+ Application Exit. 
+
+2023-09-21 10:50:39.3882|TRACE|
+ Connection has been established. 
+
+2023-09-21 10:57:59.0471|TRACE|
+ Connection has been established. 
+
+2023-09-21 10:58:35.7734|TRACE|
+ Application Exit. 
+
+2023-09-21 10:59:51.3945|TRACE|
+ Connection has been established. 
+
+2023-09-21 11:01:03.1878|TRACE|
+ Application Exit. 
+
+2023-09-21 11:03:39.0109|TRACE|
+ Connection has been established. 
+
+2023-09-21 11:12:40.7371|TRACE|
+ Connection has been established. 
+
+2023-09-21 11:20:27.6996|TRACE|
+ Application Exit. 
+
+2023-09-21 11:21:02.0849|TRACE|
+ Connection has been established. 
+
+2023-09-22 11:02:31.8164|TRACE|
+ Connection has been established. 
+
+2023-09-22 11:03:09.9392|TRACE|
+ Application Exit. 
+
+2023-09-28 14:01:28.5256|TRACE|
+ Connection has been established. 
+
+2023-09-28 14:01:28.5396|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-28 14:02:02.4901|TRACE|
+ Application Exit. 
+
+2023-09-28 14:02:07.8712|TRACE|
+ Connection has been established. 
+
+2023-09-28 14:02:47.8548|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-28 14:02:57.0325|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-09-28 14:02:57.8818|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-09-28 14:03:07.8803|TRACE|
+ Connection has been established. 
+
+2023-09-28 14:04:13.7463|TRACE|
+ Application Exit. 
+
+2023-09-28 17:43:06.0767|TRACE|
+ Connection has been established. 
+
+2023-09-28 17:48:03.7634|TRACE|
+ Connection has been established. 
+
+2023-09-28 17:48:26.9652|TRACE|
+ Application Exit. 
+
+2023-09-28 17:50:01.9318|TRACE|
+ Connection has been established. 
+
+2023-09-28 17:50:29.3654|TRACE|
+ Application Exit. 
+
+2023-09-28 20:25:32.2428|TRACE|
+ Connection has been established. 
+
+2023-09-28 20:29:55.4841|TRACE|
+ Application Exit. 
+
+2023-09-28 20:34:29.8525|TRACE|
+ Connection has been established. 
+
+2023-09-28 20:35:03.4636|TRACE|
+ Connection has been established. 
+
+2023-09-28 20:35:22.9717|TRACE|
+ Connection has been established. 
+
+2023-09-28 20:37:02.6320|TRACE|
+ Connection has been established. 
+
+2023-09-28 20:38:02.4179|TRACE|
+ Connection has been established. 
+
+2023-09-28 21:51:25.5604|TRACE|
+ Connection has been established. 
+
+2023-09-28 21:52:43.7946|TRACE|
+ Application Exit. 
+
+2023-09-28 21:57:50.4379|TRACE|
+ Connection has been established. 
+
+2023-09-28 21:58:16.5509|TRACE|
+ Connection has been established. 
+
+2023-09-29 12:57:09.7472|TRACE|
+ Connection has been established. 
+
+2023-09-29 12:58:44.8202|TRACE|
+ Connection has been established. 
+
+2023-09-29 12:59:37.3390|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:02:35.5796|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:04:23.8567|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:04:44.7093|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:05:34.8728|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:05:58.9544|TRACE|
+ Application Exit. 
+
+2023-09-29 13:06:32.7708|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:07:19.8442|TRACE|
+ Application Exit. 
+
+2023-09-29 13:08:43.4803|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:09:21.8953|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:10:42.2710|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:11:28.1411|TRACE|
+ Application Exit. 
+
+2023-09-29 13:13:24.1392|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:13:41.9058|TRACE|
+ Application Exit. 
+
+2023-09-29 13:15:03.2075|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:16:16.2665|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:16:24.5121|TRACE|
+ Application Exit. 
+
+2023-09-29 13:16:42.1193|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:16:59.1624|TRACE|
+ Application Exit. 
+
+2023-09-29 13:17:08.6221|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:17:13.1823|TRACE|
+ Application Exit. 
+
+2023-09-29 13:17:14.2561|TRACE|
+ Application Exit. 
+
+2023-09-29 13:19:29.9893|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:22:07.1487|TRACE|
+ Application Exit. 
+
+2023-09-29 13:24:33.2892|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:24:43.3075|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:26:29.9328|TRACE|
+ Application Exit. 
+
+2023-09-29 13:26:30.5451|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:26:44.6130|TRACE|
+ Application Exit. 
+
+2023-09-29 13:26:45.1804|TRACE|
+ Connection has been established. 
+
+2023-09-29 13:26:48.5555|TRACE|
+ Application Exit. 
+
+2023-09-29 13:59:02.9844|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:00:43.1077|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-29 14:00:58.2869|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-29 14:01:13.4599|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-09-29 14:06:48.1593|TRACE|
+ Application Exit. 
+
+2023-09-29 14:08:00.6072|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:12:09.2620|TRACE|
+ Application Exit. 
+
+2023-09-29 14:13:07.3799|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:13:21.6003|TRACE|
+ Application Exit. 
+
+2023-09-29 14:13:22.2077|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:13:37.0604|TRACE|
+ Application Exit. 
+
+2023-09-29 14:13:37.5909|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:14:51.8929|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:15:19.4372|TRACE|
+ Application Exit. 
+
+2023-09-29 14:16:02.2538|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:16:15.7978|TRACE|
+ Application Exit. 
+
+2023-09-29 14:16:16.3972|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:16:23.7560|TRACE|
+ Application Exit. 
+
+2023-09-29 14:16:24.2961|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:16:40.9917|TRACE|
+ Application Exit. 
+
+2023-09-29 14:16:41.5157|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:16:49.6713|TRACE|
+ Application Exit. 
+
+2023-09-29 14:16:50.1889|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:17:05.6665|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:17:12.9485|TRACE|
+ Application Exit. 
+
+2023-09-29 14:17:13.5275|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:17:25.1592|TRACE|
+ Application Exit. 
+
+2023-09-29 14:17:25.6938|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:31:32.0180|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:31:39.1035|TRACE|
+ Application Exit. 
+
+2023-09-29 14:31:39.7148|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:32:28.7491|TRACE|
+ Application Exit. 
+
+2023-09-29 14:32:29.2850|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:32:47.6628|TRACE|
+ Application Exit. 
+
+2023-09-29 14:32:48.1884|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:32:51.1773|TRACE|
+ Application Exit. 
+
+2023-09-29 14:44:13.6806|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:45:07.4450|TRACE|
+ Application Exit. 
+
+2023-09-29 14:45:08.0305|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:45:19.8465|TRACE|
+ Application Exit. 
+
+2023-09-29 14:45:26.0790|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:47:20.7273|TRACE|
+ Application Exit. 
+
+2023-09-29 14:47:21.4164|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:47:27.9235|TRACE|
+ Application Exit. 
+
+2023-09-29 14:47:28.5448|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:48:01.0937|TRACE|
+ Application Exit. 
+
+2023-09-29 14:52:18.5818|TRACE|
+ Connection has been established. 
+
+2023-09-29 14:53:39.3451|TRACE|
+ Application Exit. 
+
+2023-09-29 15:05:59.4462|TRACE|
+ Connection has been established. 
+
+2023-09-29 15:06:47.3452|TRACE|
+ Application Exit. 
+
+2023-09-29 15:09:06.8714|TRACE|
+ Connection has been established. 
+
+2023-09-29 15:10:35.5048|TRACE|
+ Application Exit. 
+
+2023-09-29 16:04:34.0227|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:05:39.5630|TRACE|
+ Application Exit. 
+
+2023-09-29 16:05:44.2616|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:05:50.4830|TRACE|
+ Application Exit. 
+
+2023-09-29 16:05:51.0969|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:09:10.2839|TRACE|
+ Application Exit. 
+
+2023-09-29 16:09:20.5494|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:09:54.2672|TRACE|
+ Application Exit. 
+
+2023-09-29 16:09:57.7284|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:10:04.0491|TRACE|
+ Application Exit. 
+
+2023-09-29 16:10:04.6793|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:10:54.1054|TRACE|
+ Application Exit. 
+
+2023-09-29 16:15:18.0462|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:18:57.7518|TRACE|
+ Application Exit. 
+
+2023-09-29 16:22:38.5000|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:22:45.3105|TRACE|
+ Application Exit. 
+
+2023-09-29 16:22:45.9069|TRACE|
+ Connection has been established. 
+
+2023-09-29 16:28:46.9757|TRACE|
+ Application Exit. 
+
+2023-09-29 16:59:28.5023|TRACE|
+ Connection has been established. 
+
+2023-09-29 17:00:20.4197|TRACE|
+ Connection has been established. 
+
+2023-09-29 17:01:44.8908|TRACE|
+ Application Exit. 
+
+2023-09-29 17:02:13.0347|TRACE|
+ Connection has been established. 
+
+2023-09-29 17:02:53.3098|TRACE|
+ Application Exit. 
+
+2023-09-29 17:35:40.7636|TRACE|
+ Connection has been established. 
+
+2023-09-29 17:36:36.1412|TRACE|
+ Application Exit. 
+
+2023-09-29 21:05:30.8345|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:05:54.0239|TRACE|
+ Application Exit. 
+
+2023-09-29 21:11:54.5262|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:13:23.6044|TRACE|
+ Application Exit. 
+
+2023-09-29 21:17:19.5706|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:19:08.8784|TRACE|
+ Application Exit. 
+
+2023-09-29 21:36:35.7498|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:37:12.0359|TRACE|
+ Application Exit. 
+
+2023-09-29 21:38:56.3468|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:39:31.8170|TRACE|
+ Application Exit. 
+
+2023-09-29 21:39:32.4583|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:39:58.1635|TRACE|
+ Application Exit. 
+
+2023-09-29 21:39:58.7410|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:40:39.8297|TRACE|
+ Application Exit. 
+
+2023-09-29 21:40:40.3753|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:44:14.0453|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:44:23.7492|TRACE|
+ Application Exit. 
+
+2023-09-29 21:44:24.4045|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:44:36.3500|TRACE|
+ Application Exit. 
+
+2023-09-29 21:44:36.8996|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:48:00.6478|TRACE|
+ Application Exit. 
+
+2023-09-29 21:48:01.1898|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:51:07.4364|TRACE|
+ Application Exit. 
+
+2023-09-29 21:51:08.0348|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:51:13.2987|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:51:26.7883|TRACE|
+ Application Exit. 
+
+2023-09-29 21:51:27.4096|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:52:04.1100|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:52:10.0588|TRACE|
+ Application Exit. 
+
+2023-09-29 21:52:10.7725|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:52:19.9055|TRACE|
+ Application Exit. 
+
+2023-09-29 21:52:20.4815|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:52:33.0091|TRACE|
+ Application Exit. 
+
+2023-09-29 21:52:33.6036|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:53:33.5486|TRACE|
+ Application Exit. 
+
+2023-09-29 21:55:46.9246|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:56:01.9534|TRACE|
+ Application Exit. 
+
+2023-09-29 21:56:12.9406|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:56:22.9876|TRACE|
+ Application Exit. 
+
+2023-09-29 21:57:57.9535|TRACE|
+ Connection has been established. 
+
+2023-09-29 21:58:22.4331|TRACE|
+ Application Exit. 
+
+2023-09-30 09:57:45.2563|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:00:47.3168|TRACE|
+ Application Exit. 
+
+2023-09-30 10:01:51.7832|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:09:14.7066|TRACE|
+ Application Exit. 
+
+2023-09-30 10:09:19.7810|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:12:16.0276|TRACE|
+ Application Exit. 
+
+2023-09-30 10:13:27.7895|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:14:47.1952|TRACE|
+ Application Exit. 
+
+2023-09-30 10:15:52.7500|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:23:03.8325|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-09-30 10:23:07.9435|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:25:26.7870|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-09-30 10:25:38.1739|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:28:26.9097|TRACE|
+ Application Exit. 
+
+2023-09-30 10:29:06.2490|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:31:49.0233|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:32:41.0792|TRACE|
+ Application Exit. 
+
+2023-09-30 10:34:54.7720|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:37:02.5677|TRACE|
+ Application Exit. 
+
+2023-09-30 10:37:46.3319|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:39:57.9290|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:43:20.4342|TRACE|
+ Connection has been established. 
+
+2023-09-30 10:51:27.0966|TRACE|
+ Application Exit. 
+
+2023-09-30 11:00:11.3679|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:02:34.2597|TRACE|
+ Application Exit. 
+
+2023-09-30 11:04:10.0203|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:04:50.8007|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:25:54.8317|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:27:13.7849|TRACE|
+ Application Exit. 
+
+2023-09-30 11:34:51.3178|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:37:03.1940|TRACE|
+ Application Exit. 
+
+2023-09-30 11:48:22.8737|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:48:52.2533|TRACE|
+ Connection has been established. 
+
+2023-09-30 11:50:11.4165|TRACE|
+ Application Exit. 
+
+2023-09-30 12:19:20.5775|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:23:39.8168|TRACE|
+ Application Exit. 
+
+2023-09-30 12:23:52.9529|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:24:18.5036|TRACE|
+ Application Exit. 
+
+2023-09-30 12:25:55.6498|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:26:19.0759|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:29:36.1585|TRACE|
+ Application Exit. 
+
+2023-09-30 12:31:21.1774|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:33:41.3523|TRACE|
+ Application Exit. 
+
+2023-09-30 12:36:22.5721|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:36:47.7555|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:41:22.7141|TRACE|
+ Application Exit. 
+
+2023-09-30 12:44:53.0909|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:45:14.3857|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:47:14.9609|TRACE|
+ Application Exit. 
+
+2023-09-30 12:48:57.4207|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:51:43.5616|TRACE|
+ Application Exit. 
+
+2023-09-30 12:51:49.4456|TRACE|
+ Connection has been established. 
+
+2023-09-30 12:53:31.3288|TRACE|
+ Application Exit. 
+
+2023-09-30 12:54:08.6370|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-09-30 12:54:23.5833|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-09-30 12:54:38.5874|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-09-30 13:05:55.3134|TRACE|
+ Connection has been established. 
+
+2023-09-30 13:08:30.8447|TRACE|
+ Application Exit. 
+
+2023-10-02 10:35:44.2468|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:39:57.4750|TRACE|
+ Application Exit. 
+
+2023-10-02 10:48:21.4709|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:50:19.9104|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 10:50:21.5797|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:50:36.6033|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 10:50:51.4796|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:53:38.1802|TRACE|
+ Application Exit. 
+
+2023-10-02 10:54:29.2516|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:57:48.3178|TRACE|
+ Connection has been established. 
+
+2023-10-02 10:58:47.1673|TRACE|
+ Application Exit. 
+
+2023-10-02 10:59:49.0395|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:02:10.7275|TRACE|
+ Application Exit. 
+
+2023-10-02 11:03:00.3265|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:04:07.0524|TRACE|
+ Application Exit. 
+
+2023-10-02 11:04:33.2004|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:07:51.6582|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:14:49.0790|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:15:53.9747|TRACE|
+ Application Exit. 
+
+2023-10-02 11:20:03.8042|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:21:20.1375|TRACE|
+ Application Exit. 
+
+2023-10-02 11:22:16.3264|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:30:16.1787|TRACE|
+ Application Exit. 
+
+2023-10-02 11:32:27.4438|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:33:00.2479|TRACE|
+ Application Exit. 
+
+2023-10-02 11:33:01.8296|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:36:10.9977|TRACE|
+ Application Exit. 
+
+2023-10-02 11:36:35.1717|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:38:04.6450|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:39:25.0975|TRACE|
+ Application Exit. 
+
+2023-10-02 11:40:22.3932|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:41:00.8733|TRACE|
+ Application Exit. 
+
+2023-10-02 11:49:20.9747|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:55:06.3259|TRACE|
+ Application Exit. 
+
+2023-10-02 11:55:59.6359|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:56:43.1623|TRACE|
+ Connection has been established. 
+
+2023-10-02 11:57:50.9254|TRACE|
+ Application Exit. 
+
+2023-10-02 12:16:52.0519|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:19:02.8039|TRACE|
+ Application Exit. 
+
+2023-10-02 12:19:20.2725|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:31:14.8871|TRACE|
+ Application Exit. 
+
+2023-10-02 12:46:56.6442|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:50:14.6328|TRACE|
+ Application Exit. 
+
+2023-10-02 12:50:16.1288|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:50:25.4946|TRACE|
+ Application Exit. 
+
+2023-10-02 12:50:57.3046|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:51:19.9566|TRACE|
+ Application Exit. 
+
+2023-10-02 12:51:21.4866|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:51:35.2951|TRACE|
+ Application Exit. 
+
+2023-10-02 12:51:37.5493|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:51:58.9399|TRACE|
+ Application Exit. 
+
+2023-10-02 12:52:00.4287|TRACE|
+ Connection has been established. 
+
+2023-10-02 12:52:27.2114|TRACE|
+ Application Exit. 
+
+2023-10-02 12:52:28.8824|TRACE|
+ Connection has been established. 
+
+2023-10-02 13:35:53.5632|TRACE|
+ Application Exit. 
+
+2023-10-02 13:35:56.8747|TRACE|
+ Connection has been established. 
+
+2023-10-02 13:38:45.7247|TRACE|
+ Application Exit. 
+
+2023-10-02 13:39:52.6818|TRACE|
+ Connection has been established. 
+
+2023-10-02 13:40:59.1714|TRACE|
+ Application Exit. 
+
+2023-10-02 13:41:40.3064|TRACE|
+ Connection has been established. 
+
+2023-10-02 13:54:18.9230|TRACE|
+ Application Exit. 
+
+2023-10-02 13:55:19.5831|TRACE|
+ Connection has been established. 
+
+2023-10-02 13:59:23.2687|TRACE|
+ Application Exit. 
+
+2023-10-02 13:59:27.2386|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:01:03.3313|TRACE|
+ Application Exit. 
+
+2023-10-02 14:01:04.7714|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:03:25.8987|TRACE|
+ Application Exit. 
+
+2023-10-02 14:05:57.7131|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:06:51.1536|TRACE|
+ Application Exit. 
+
+2023-10-02 14:07:20.5116|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:07:36.1771|TRACE|
+ Application Exit. 
+
+2023-10-02 14:10:44.1494|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:11:43.9555|TRACE|
+ Application Exit. 
+
+2023-10-02 14:21:06.0960|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:23:31.9970|TRACE|
+ Application Exit. 
+
+2023-10-02 14:24:42.5213|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:27:09.5386|TRACE|
+ Application Exit. 
+
+2023-10-02 14:29:15.9721|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:31:26.9692|TRACE|
+ Application Exit. 
+
+2023-10-02 14:32:31.0217|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:36:31.6003|TRACE|
+ Application Exit. 
+
+2023-10-02 14:45:20.7746|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:52:39.7944|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 14:52:50.9297|TRACE|
+ Connection has been established. 
+
+2023-10-02 14:58:57.9606|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 14:59:06.2571|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:18:14.3537|TRACE|
+ Application Exit. 
+
+2023-10-02 15:22:35.4339|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:26:32.3512|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 15:26:34.4803|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:26:36.9376|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-02 15:26:49.6566|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:29:46.0976|TRACE|
+ Application Exit. 
+
+2023-10-02 15:37:13.7274|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:37:27.7323|TRACE|
+ Application Exit. 
+
+2023-10-02 15:38:22.9431|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:42:23.1617|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:42:50.5298|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:43:11.1021|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:43:39.8245|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:43:59.5170|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:44:24.7514|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:45:20.6217|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:45:35.9816|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:45:51.0400|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:46:04.9160|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:46:25.9397|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:47:19.4973|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:47:37.1445|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:48:04.3001|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:48:11.3406|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:48:31.2813|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:52:37.3364|TRACE|
+ Application Exit. 
+
+2023-10-02 15:52:38.8872|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:53:05.2053|TRACE|
+ Application Exit. 
+
+2023-10-02 15:53:08.0331|TRACE|
+ Connection has been established. 
+
+2023-10-02 15:54:55.3589|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:00:05.6971|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:00:19.2524|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:04:59.8668|TRACE|
+ Application Exit. 
+
+2023-10-02 16:05:01.4032|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:05:22.9695|TRACE|
+ Application Exit. 
+
+2023-10-02 16:05:24.4935|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:05:56.5467|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:06:11.8669|TRACE|
+ Application Exit. 
+
+2023-10-02 16:07:48.7455|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:08:08.9055|TRACE|
+ Application Exit. 
+
+2023-10-02 16:08:26.4534|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:09:21.6938|TRACE|
+ Application Exit. 
+
+2023-10-02 16:19:53.2455|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:20:45.8391|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:21:48.3095|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:23:21.8765|TRACE|
+ Application Exit. 
+
+2023-10-02 16:32:12.5284|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:34:20.5029|TRACE|
+ Application Exit. 
+
+2023-10-02 16:34:43.5053|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:36:01.9123|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:37:32.0745|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:38:37.1587|TRACE|
+ Application Exit. 
+
+2023-10-02 16:51:02.5983|TRACE|
+ Connection has been established. 
+
+2023-10-02 16:51:24.7245|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:03:17.4497|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:03:31.9765|TRACE|
+ Application Exit. 
+
+2023-10-02 17:03:39.6273|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:10:11.4381|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:15:53.9746|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:16:09.1545|TRACE|
+ Application Exit. 
+
+2023-10-02 17:16:46.5744|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:23:46.9215|TRACE|
+ Application Exit. 
+
+2023-10-02 17:27:17.2381|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:31:58.4004|TRACE|
+ Application Exit. 
+
+2023-10-02 17:31:59.8838|TRACE|
+ Connection has been established. 
+
+2023-10-02 17:35:25.9338|TRACE|
+ Application Exit. 
+
+2023-10-02 22:24:46.0369|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:26:51.7842|TRACE|
+ Application Exit. 
+
+2023-10-02 22:39:09.3738|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:39:21.2643|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:40:44.2127|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:41:02.4593|TRACE|
+ Application Exit. 
+
+2023-10-02 22:41:03.3403|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:41:54.2540|TRACE|
+ Application Exit. 
+
+2023-10-02 22:50:51.5448|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:51:22.4326|TRACE|
+ Application Exit. 
+
+2023-10-02 22:52:04.8315|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:52:27.9316|TRACE|
+ Application Exit. 
+
+2023-10-02 22:53:28.4150|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:54:00.2151|TRACE|
+ Application Exit. 
+
+2023-10-02 22:54:24.6567|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:54:54.4638|TRACE|
+ Application Exit. 
+
+2023-10-02 22:55:21.6298|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:56:19.3709|TRACE|
+ Application Exit. 
+
+2023-10-02 22:59:00.9362|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:59:19.3625|TRACE|
+ Application Exit. 
+
+2023-10-02 22:59:20.1819|TRACE|
+ Connection has been established. 
+
+2023-10-02 22:59:44.1053|TRACE|
+ Application Exit. 
+
+2023-10-02 22:59:44.9261|TRACE|
+ Connection has been established. 
+
+2023-10-02 23:00:42.5156|TRACE|
+ Application Exit. 
+
+2023-10-02 23:00:43.2417|TRACE|
+ Connection has been established. 
+
+2023-10-02 23:00:53.3457|TRACE|
+ Application Exit. 
+
+2023-10-04 11:01:41.4339|TRACE|
+ Connection has been established. 
+
+2023-10-04 11:07:01.6058|TRACE|
+ Application Exit. 
+
+2023-10-18 10:11:30.2945|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:13:58.3314|TRACE|
+ Application Exit. 
+
+2023-10-18 10:14:26.9785|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:16:43.4704|TRACE|
+ Application Exit. 
+
+2023-10-18 10:42:07.4136|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:42:31.0572|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:43:07.3684|TRACE|
+ Application Exit. 
+
+2023-10-18 10:45:32.2630|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:46:05.4915|TRACE|
+ Application Exit. 
+
+2023-10-18 10:46:40.6927|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:47:11.6590|TRACE|
+ Application Exit. 
+
+2023-10-18 10:47:28.6209|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:47:43.4379|TRACE|
+ Application Exit. 
+
+2023-10-18 10:48:02.3207|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:49:04.2708|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:51:28.4656|TRACE|
+ Application Exit. 
+
+2023-10-18 10:52:11.3003|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:54:43.9765|TRACE|
+ Application Exit. 
+
+2023-10-18 10:55:25.6564|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:55:56.5752|TRACE|
+ Application Exit. 
+
+2023-10-18 10:56:25.7806|TRACE|
+ Connection has been established. 
+
+2023-10-18 10:59:11.6713|TRACE|
+ Application Exit. 
+
+2023-10-18 11:10:02.6578|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:19:28.8379|TRACE|
+ Application Exit. 
+
+2023-10-18 11:22:54.2480|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:24:25.4728|TRACE|
+ Application Exit. 
+
+2023-10-18 11:24:39.5695|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:25:01.1106|TRACE|
+ Application Exit. 
+
+2023-10-18 11:25:11.8032|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:26:50.6912|TRACE|
+ Application Exit. 
+
+2023-10-18 11:34:27.8099|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:35:09.5505|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:37:07.6750|TRACE|
+ Application Exit. 
+
+2023-10-18 11:38:19.6489|TRACE|
+ Connection has been established. 
+
+2023-10-18 11:44:34.9175|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:07:10.9287|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:07:48.6081|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:07:55.8313|TRACE|
+ Application Exit. 
+
+2023-10-18 12:07:56.5084|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:13:44.7666|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:14:25.8371|TRACE|
+ Application Exit. 
+
+2023-10-18 12:14:26.5591|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:16:31.4514|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:16:59.9125|TRACE|
+ Application Exit. 
+
+2023-10-18 12:17:01.0266|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:18:55.4470|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:19:31.5471|TRACE|
+ Application Exit. 
+
+2023-10-18 12:20:27.7168|TRACE|
+ Connection has been established. 
+
+2023-10-18 12:24:52.9637|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-10-18 12:25:51.6648|TRACE|
+ Application Exit. 
+
+2023-10-18 14:25:08.4236|TRACE|
+ Connection has been established. 
+
+2023-10-18 14:26:16.6652|TRACE|
+ Application Exit. 
+
+2023-10-18 14:27:00.8953|TRACE|
+ Connection has been established. 
+
+2023-10-18 14:29:04.8306|TRACE|
+ Connection has been established. 
+
+2023-10-18 14:32:20.2772|TRACE|
+ Connection has been established. 
+
+2023-10-18 14:39:12.5316|TRACE|
+ Application Exit. 
+
+2023-10-18 14:39:44.1416|TRACE|
+ Connection has been established. 
+
+2023-10-18 14:43:25.0237|TRACE|
+ Application Exit. 
+
+2023-10-18 16:59:38.8669|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:01:39.3529|TRACE|
+ Application Exit. 
+
+2023-10-18 17:02:01.2155|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:02:21.1309|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:03:33.7957|TRACE|
+ Application Exit. 
+
+2023-10-18 17:15:21.6433|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:17:06.2843|TRACE|
+ Application Exit. 
+
+2023-10-18 17:17:19.7636|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:18:44.1178|TRACE|
+ Application Exit. 
+
+2023-10-18 17:20:23.6128|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:20:27.0773|TRACE|
+ Application Exit. 
+
+2023-10-18 17:24:53.4451|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:25:19.7888|TRACE|
+ Application Exit. 
+
+2023-10-18 17:34:47.4351|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:35:04.3052|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:37:02.2521|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:37:05.3806|TRACE|
+ Application Exit. 
+
+2023-10-18 17:37:20.7855|TRACE|
+ Connection has been established. 
+
+2023-10-18 17:39:51.8692|TRACE|
+ Application Exit. 
+
+2023-10-18 18:42:26.1556|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-10-18 18:42:41.1480|TRACE|
+ Connection has been established. 
+
+2023-10-18 18:43:18.2034|TRACE|
+ Application Exit. 
+
+2023-10-18 18:44:29.1942|TRACE|
+ Connection has been established. 
+
+2023-10-18 18:44:38.5613|TRACE|
+ Application Exit. 
+
+2023-10-18 18:45:14.4854|TRACE|
+ Connection has been established. 
+
+2023-10-18 18:45:19.5567|TRACE|
+ Application Exit. 
+
+2023-10-18 18:45:42.1531|TRACE|
+ Connection has been established. 
+
+2023-10-18 18:46:56.5668|TRACE|
+ Connection has been established. 
+
+2023-10-20 10:59:44.2195|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:17:35.4221|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:26:09.5220|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:27:14.6284|TRACE|
+ Application Exit. 
+
+2023-10-20 13:27:52.0911|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:28:23.4556|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:32:50.6350|TRACE|
+ Connection has been established. 
+
+2023-10-20 13:35:15.7243|TRACE|
+ Application Exit. 
+
+2023-10-20 13:45:34.2840|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:08:39.1501|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:14:55.2558|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:15:14.4369|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:15:55.7225|TRACE|
+ Application Exit. 
+
+2023-10-20 15:32:13.6479|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:32:31.7923|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 15:32:43.3106|TRACE|
+ Connection has been established. 
+
+2023-10-20 15:36:03.6894|TRACE|
+ Application Exit. 
+
+2023-10-20 15:38:55.7102|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:29:05.1428|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:32:05.3966|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 16:32:18.8680|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:32:36.6208|TRACE|
+ Application Exit. 
+
+2023-10-20 16:49:02.9802|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:50:24.5658|TRACE|
+ Application Exit. 
+
+2023-10-20 16:52:58.6175|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:53:22.1613|TRACE|
+ Application Exit. 
+
+2023-10-20 16:57:20.4202|TRACE|
+ Connection has been established. 
+
+2023-10-20 16:57:37.8446|TRACE|
+ There is error during the connection:An error has occurred in connecting.. 
+
+2023-10-20 17:00:04.7102|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:02:04.4140|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 17:02:20.3324|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:02:51.5063|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 17:03:03.9068|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:03:32.7433|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 17:03:34.6579|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:05:11.9618|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 17:05:19.0498|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:05:55.9305|TRACE|
+ Connection has been disconnected:An exception has occurred while receiving. 
+
+2023-10-20 17:06:05.0204|TRACE|
+ Connection has been established. 
+
+2023-10-20 17:09:42.5708|TRACE|
+ Application Exit. 
+
+2023-10-20 19:46:01.4939|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:18:27.6760|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:19:25.1896|TRACE|
+ Application Exit. 
+
+2023-10-20 21:20:25.4789|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:20:35.1351|TRACE|
+ Application Exit. 
+
+2023-10-20 21:31:48.3893|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:32:52.2831|TRACE|
+ Application Exit. 
+
+2023-10-20 21:37:40.5070|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:42:47.7934|TRACE|
+ Application Exit. 
+
+2023-10-20 21:43:58.4542|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:45:42.2738|TRACE|
+ Application Exit. 
+
+2023-10-20 21:47:00.7207|TRACE|
+ Connection has been established. 
+
+2023-10-20 21:47:21.7197|TRACE|
+ Application Exit. 
+
+2023-10-20 22:02:50.9397|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:05:20.9052|TRACE|
+ Application Exit. 
+
+2023-10-20 22:10:59.9267|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:12:41.6905|TRACE|
+ Application Exit. 
+
+2023-10-20 22:13:46.1351|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:14:03.7847|TRACE|
+ Application Exit. 
+
+2023-10-20 22:14:37.9694|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:14:52.9524|TRACE|
+ Application Exit. 
+
+2023-10-20 22:19:35.5322|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:19:56.7720|TRACE|
+ Application Exit. 
+
+2023-10-20 22:32:14.2205|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:33:30.4232|TRACE|
+ Application Exit. 
+
+2023-10-20 22:43:02.5749|TRACE|
+ Connection has been established. 
+
+2023-10-20 22:45:04.3225|TRACE|
+ Application Exit. 
+
+2023-10-21 09:59:37.7485|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:00:52.4479|TRACE|
+ Application Exit. 
+
+2023-10-21 10:00:58.6899|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:08:09.2776|TRACE|
+ Application Exit. 
+
+2023-10-21 10:08:16.4952|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:09:41.5351|TRACE|
+ Application Exit. 
+
+2023-10-21 10:10:57.7548|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:18:21.0227|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:25:25.1356|TRACE|
+ Application Exit. 
+
+2023-10-21 10:26:05.8021|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:32:14.1894|TRACE|
+ Application Exit. 
+
+2023-10-21 10:44:38.8597|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:46:09.2775|TRACE|
+ Application Exit. 
+
+2023-10-21 10:47:21.0184|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:49:53.5267|TRACE|
+ Application Exit. 
+
+2023-10-21 10:50:02.7690|TRACE|
+ Connection has been established. 
+
+2023-10-21 10:52:05.1718|TRACE|
+ Application Exit. 
+
+2023-10-21 11:02:03.2944|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:03:21.1214|TRACE|
+ Application Exit. 
+
+2023-10-21 11:14:32.2849|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:15:01.2727|TRACE|
+ Application Exit. 
+
+2023-10-21 11:16:12.4457|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:16:22.7814|TRACE|
+ Application Exit. 
+
+2023-10-21 11:17:45.1889|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:18:48.9107|TRACE|
+ Application Exit. 
+
+2023-10-21 11:21:22.4370|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:21:45.1336|TRACE|
+ Application Exit. 
+
+2023-10-21 11:22:21.9732|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:22:55.0042|TRACE|
+ Application Exit. 
+
+2023-10-21 11:23:12.9766|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:23:18.6009|TRACE|
+ Application Exit. 
+
+2023-10-21 11:37:30.5382|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:37:56.6793|TRACE|
+ Application Exit. 
+
+2023-10-21 11:38:28.4888|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:38:37.1760|TRACE|
+ Application Exit. 
+
+2023-10-21 11:39:01.8312|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:39:28.1619|TRACE|
+ Application Exit. 
+
+2023-10-21 11:40:47.6252|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:41:01.6286|TRACE|
+ Application Exit. 
+
+2023-10-21 11:42:06.6178|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:42:42.7088|TRACE|
+ Application Exit. 
+
+2023-10-21 11:43:10.1594|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:43:25.2794|TRACE|
+ Application Exit. 
+
+2023-10-21 11:43:48.7659|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:43:56.9153|TRACE|
+ Application Exit. 
+
+2023-10-21 11:44:38.2505|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:46:06.4512|TRACE|
+ Application Exit. 
+
+2023-10-21 11:46:26.7333|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:46:50.6529|TRACE|
+ Application Exit. 
+
+2023-10-21 11:47:12.6704|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:47:48.2843|TRACE|
+ Application Exit. 
+
+2023-10-21 11:48:46.6779|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:49:20.3053|TRACE|
+ Application Exit. 
+
+2023-10-21 11:52:32.5977|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:52:52.4041|TRACE|
+ Application Exit. 
+
+2023-10-21 11:54:33.7828|TRACE|
+ Connection has been established. 
+
+2023-10-21 11:54:44.4419|TRACE|
+ Application Exit. 
+
+2023-10-21 11:54:50.9451|TRACE|
+ Connection has been established. 
+
+2023-10-21 12:02:18.3326|TRACE|
+ Connection has been established. 
+
+2023-10-21 12:07:50.1458|TRACE|
+ Connection has been established. 
+
+2023-10-21 12:12:11.9607|TRACE|
+ Application Exit. 
+
+2023-10-21 12:26:55.5917|TRACE|
+ Connection has been established. 
+
+2023-10-21 12:27:31.8660|TRACE|
+ Application Exit. 
+
+2023-10-22 12:09:07.2917|TRACE|
+ Connection has been disconnected:An exception has occurred while connecting. 
+
+2023-10-22 12:09:22.1923|TRACE|
+ Connection has been established. 
+
+2023-10-22 12:16:55.7846|TRACE|
+ Application Exit. 
+
+2023-10-23 10:04:11.2167|TRACE|
+ Connection has been established. 
+
+2023-10-23 10:06:25.8065|TRACE|
+ Application Exit. 
+
+2023-10-23 10:26:09.7062|TRACE|
+ Connection has been established. 
+
+2023-10-23 10:30:57.6000|TRACE|
+ Application Exit. 
+
+2023-10-26 11:09:47.3747|TRACE|
+ Connection has been established. 
+
+2023-10-26 11:10:49.3867|TRACE|
+ Connection has been established. 
+
+2023-10-26 11:11:03.4130|TRACE|
+ Connection has been established. 
+
+2023-10-26 11:24:43.9388|TRACE|
+ Connection has been established. 
+
+2023-10-26 11:28:57.2177|TRACE|
  Application Exit. 
 

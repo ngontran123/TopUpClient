@@ -113,20 +113,20 @@ namespace NaptienMaster.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Monotype_Corsiva {
+        internal static byte[] KNBobohei_Bold {
             get {
-                object obj = ResourceManager.GetObject("Monotype_Corsiva", resourceCulture);
+                object obj = ResourceManager.GetObject("KNBobohei_Bold", resourceCulture);
                 return ((byte[])(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static System.Drawing.Bitmap original_ceed1c47666e3a061bac4a0fac171716 {
+        internal static byte[] Monotype_Corsiva {
             get {
-                object obj = ResourceManager.GetObject("original_ceed1c47666e3a061bac4a0fac171716", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("Monotype_Corsiva", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

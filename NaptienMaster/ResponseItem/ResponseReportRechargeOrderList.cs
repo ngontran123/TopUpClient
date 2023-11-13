@@ -40,6 +40,7 @@ namespace NaptienMaster.ResponseItem
         public string After_Balance { get; set; }
         public string Before_Balance_Ussd { get; set; }
         public string After_Balance_Ussd { get; set; }
+        public string Sms_Time { get; set;}
         public string Card_Real_Amount { get; set; }
     }
 }

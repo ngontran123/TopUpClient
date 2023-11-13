@@ -19,6 +19,8 @@ using System.Configuration;
 using WebSocketSharp;
 using System.Xml;
 using NaptienMaster.Services;
+using System.Net.Http;
+using NaptienMaster.ResponseItem;
 
 namespace NaptienMaster
 {
@@ -29,8 +31,11 @@ namespace NaptienMaster
         public string pc_id_value="";
         public string access_token = "";
         public bool status_save;
-        public const int current_version_code = 12;
-        public string placeholder = "Nhập token vào đây";
+        private string email = "nguyenthanhtoi1090@gmail.com";
+        private string password = "Zxcv1234";
+        public const int current_version_code = 17;
+        public string placeholder = "";
+        public string language = "";
         public static Login ReturnLoginInstance()
         {
             return login_instance;
@@ -44,13 +49,28 @@ namespace NaptienMaster
 
         private async void Login_Load(object sender, EventArgs e)
         {
+            LanguageConvert language_convert = new LanguageConvert();
+            language = language_convert.currentLanguageVersion();
             checkVersionCode(current_version_code,"https://naptien.biz/apis/modem-gsm/gsm-version");
             updateFontSetting();
             wsHelper.connectToServer();
             wsHelper.handlingDisconnect();
             updateToken();
+           
             this.save_password_switch.Checked = status_save;
             this.tokenTxtBox.Text = access_token;
+            if(language.Equals("English"))
+            {
+                placeholder = "Place your access token here";
+            }
+            else if(language.Equals("Chinese"))
+            {
+                placeholder = "输入你的token在这里";
+            }
+            else
+            {
+                placeholder = "Nhập token của bạn ở đây";
+            }
             if(string.IsNullOrEmpty(this.tokenTxtBox.Text))
             {
                 this.tokenTxtBox.Text =placeholder;
@@ -90,7 +110,6 @@ namespace NaptienMaster
         }
         private async void checkVersionCode(int current_version_code, string entry_point)
         {
-
             try
             {
                
@@ -109,7 +128,7 @@ namespace NaptienMaster
                     {
                         server_version += server_current_version.ToString();
                     }
-                    catch (Exception er)
+                    catch(Exception er)
                     {
                         LoggerManager.LogError(er.Message);
                     }
@@ -160,8 +179,18 @@ namespace NaptienMaster
         }
         private void updateFontSetting()
         {
-            string font_file_path = Path.Combine(Path.GetTempPath(),"MonotypeCorsiva.ttf");
-            File.WriteAllBytes(font_file_path, Properties.Resources.Monotype_Corsiva);
+            string font_file_path = "";
+            if (language == "中文")
+            {
+                font_file_path = Path.Combine(Path.GetTempPath(), "KNBobohei_Bold.ttf");
+                File.WriteAllBytes(font_file_path, Properties.Resources.KNBobohei_Bold);
+            }
+            else
+            {
+                font_file_path = Path.Combine(Path.GetTempPath(), "MonotypeCorsiva.ttf");
+                File.WriteAllBytes(font_file_path, Properties.Resources.Monotype_Corsiva);
+
+            }
             PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(font_file_path);
             loginLabel.Font = new Font(pfc.Families[0],30);
@@ -193,6 +222,49 @@ namespace NaptienMaster
             {
                 LoggerManager.LogError(er.Message);
             }
+        }
+        public void UpdateConfigSetting(string key,string value,string setting)
+        {
+            try
+            {
+                XmlDocument xml = new XmlDocument();
+                xml.Load(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+                xml.SelectSingleNode($"//{setting}").Attributes[key].Value = value;
+                xml.Save(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+                ConfigurationManager.RefreshSection($"//{setting}");
+            }
+            catch (Exception er)
+            {
+                LoggerManager.LogError(er.Message);
+            }
+        }
+        private async Task<string> getMyMobiAppToken(string email,string password)
+        {
+            string token = "";
+            try
+            {
+                Dictionary<string, string> dict_user = new Dictionary<string, string>
+              {
+                  {"email",email},
+                  {"password",password},
+              };
+                FormUrlEncodedContent data = new FormUrlEncodedContent(dict_user);
+                var token_ob = await ApiServices.getMyTokenApi<ResponseTokenItem>("login", data);
+                if(token_ob!=null)
+                {
+                    if (token_ob.Success == "true")
+                    {
+                        token = "Bearer " + token_ob.Data.AuthData.AccessToken;
+                    }
+                }
+              
+            }
+            catch (Exception er)
+            {
+                LoggerManager.LogError(er.Message);
+
+            }
+            return token;
         }
         private string getPCID()
         {
@@ -231,9 +303,19 @@ namespace NaptienMaster
                 token_save = "";
                 addUpdateSetting("access_token", token_save);
             }
+            string min_version_code = Environment.GetEnvironmentVariable("SERVER_MIN_VERSION");
+            if(string.IsNullOrEmpty(min_version_code))
+            {
+                checkVersionCode(current_version_code, "https://naptien.biz/apis/modem-gsm/gsm-version");
+            }
             string pc_id = getPCID();
             pc_id_value = pc_id;
             string token = this.tokenTxtBox.Text.Trim();
+            string register_my_token = await getMyMobiAppToken(email, password);
+            if(!string.IsNullOrEmpty(register_my_token))
+            {
+                Environment.SetEnvironmentVariable("MY_TOKEN", register_my_token);
+            }
             Environment.SetEnvironmentVariable("PC_ID", pc_id);
             Environment.SetEnvironmentVariable("TOKEN", token);
             wsHelper.pushLoginToken(pc_id,token);
@@ -248,7 +330,21 @@ namespace NaptienMaster
                 form1.Show();
             }
             else
-            {   
+            {   if(string.IsNullOrEmpty(status_message))
+                {
+                    if(this.language=="English")
+                    {
+                        status_message = "Unable to establish a connection to server.Please recheck your internet connection.";
+                    }
+                    else if(this.language == "中文")
+                    {
+                        status_message = "互相网络连接被丢失.请你在检查你的网络连接";
+                    }
+                    else
+                    {
+                        status_message = "Mất kết nối tới máy chủ.Vui lòng kiểm tra lại kết nối internet.";
+                    }
+                }
                 MessageBox.Show(status_message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Stop);
             }
         }
