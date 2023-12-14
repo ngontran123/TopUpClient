@@ -22,7 +22,7 @@ namespace NaptienMaster
         {
             LanguageConvert language_convert = new LanguageConvert();
             string current_language = language_convert.currentLanguageVersion();
-            if(!string.IsNullOrEmpty(current_language) ) 
+            if(!string.IsNullOrEmpty(current_language)) 
             {
                 language_convert.languageConvert(current_language);
             }

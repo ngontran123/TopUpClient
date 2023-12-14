@@ -33,7 +33,7 @@ namespace NaptienMaster
         public bool status_save;
         private string email = "nguyenthanhtoi1090@gmail.com";
         private string password = "Zxcv1234";
-        public const int current_version_code = 17;
+        public const int current_version_code = 19;
         public string placeholder = "";
         public string language = "";
         public static Login ReturnLoginInstance()
@@ -51,7 +51,7 @@ namespace NaptienMaster
         {
             LanguageConvert language_convert = new LanguageConvert();
             language = language_convert.currentLanguageVersion();
-            checkVersionCode(current_version_code,"https://naptien.biz/apis/modem-gsm/gsm-version");
+            checkVersionCode(current_version_code,"https://naptien.shop/apis/modem-gsm/gsm-version");
             updateFontSetting();
             wsHelper.connectToServer();
             wsHelper.handlingDisconnect();
@@ -306,7 +306,7 @@ namespace NaptienMaster
             string min_version_code = Environment.GetEnvironmentVariable("SERVER_MIN_VERSION");
             if(string.IsNullOrEmpty(min_version_code))
             {
-                checkVersionCode(current_version_code, "https://naptien.biz/apis/modem-gsm/gsm-version");
+                checkVersionCode(current_version_code, "https://naptien.shop/apis/modem-gsm/gsm-version");
             }
             string pc_id = getPCID();
             pc_id_value = pc_id;

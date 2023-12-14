@@ -811,7 +811,6 @@ namespace NaptienMaster.GSM
                 string card_real_amount = "";
                 string balance = "";
                 string sim_type = this.SimType;
-                bool retry_topup = true;
                 bool retry_ussd = true;
                 Regex regex_ussd = new Regex(@"da nap [\d,]+\s+VND");
                 Regex regex_after_balance = new Regex(@"hien tai [\d,]+");
@@ -965,25 +964,8 @@ namespace NaptienMaster.GSM
                             }
                             this.Message = this.loadMsg(this.topupResult);
                             after_balance = before_balance;
-                            double before_balance_value = 0;
-                            double after_balance_value = 0;
-                            try
-                            {
-                                before_balance_value = double.Parse(this.instance.balance_standard(before_balance));
-                            }
-                            catch (Exception err)
-                            {
-                                LoggerManager.LogError("before_balance_parse:" + err.Message);
-                            }
-                            try
-                            {
-                                after_balance_value = double.Parse(this.instance.balance_standard(after_balance));
-                            }
-                            catch(Exception err)
-                            {
-                                LoggerManager.LogError("after_balance_parse:" + err.Message);
-                            }
-                            balance = after_balance_value.ToString();
+
+                            balance = after_balance;
 
                             card_real_amount = "0";
                             try
@@ -1047,13 +1029,12 @@ namespace NaptienMaster.GSM
                             {
                                 this.Charged = (int.Parse(this.Charged.Replace(",", "").Replace(".", "")) + int.Parse(this.instance.balance_standard(card_amount))).ToString();
                             }
-                            double before_balance_value = 0;
-                            double after_balance_value = 0;
                             DateTime after_card_real_amount_timeout = DateTime.Now;
                             while (string.IsNullOrEmpty(after_card_real_amount) && DateTime.Now.Subtract(after_card_real_amount_timeout).TotalSeconds<130)
                             {
                                 await Task.Delay(100);
                             }
+
                             if(string.IsNullOrEmpty(after_card_real_amount))
                             {
                                 try
@@ -1067,7 +1048,6 @@ namespace NaptienMaster.GSM
                                     login_instance.wsHelper.sendDataToServer(res_json);
                                     report = $"{{\"command\":\"REPORT_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":true,\"message\":\"Truy vấn trạng thái thẻ thành công.\",\"extra_data\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"{this.topupResult}\",\"network\":\"{this.Telco}\",\"sim_type\":\"{sim_type}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Cước nợ trước của bạn là:{before_balance}\",\"after_balance_ussd\":\"Cước nợ trước của bạn là:{after_balance}\",\"sms_time\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
                                     var report_after_value = JsonConvert.DeserializeObject(report);
-
                                     string res_after_value = JsonConvert.SerializeObject(report_after_value);
                                     if (Properties.Settings.Default.reportRechargeOrderList == null)
                                     {
@@ -1094,23 +1074,7 @@ namespace NaptienMaster.GSM
                             {
                                 LoggerManager.LogError("after_balance_fail:" + err.Message);
                             }
-                            try
-                            {
-                                before_balance_value = double.Parse(this.instance.balance_standard(before_balance));
-                            }
-                            catch (Exception err)
-                            {
-                                LoggerManager.LogError("before_balance_parse:" + err.Message);
-                            }
-                            try
-                            {
-                                after_balance_value = double.Parse(this.instance.balance_standard(after_balance));
-                            }
-                            catch(Exception err)
-                            {
-                                LoggerManager.LogError("after_balance_parse:" + err.Message);
-                            }
-                            balance = after_balance_value.ToString();
+                            balance = after_balance;
                             card_real_amount = after_card_real_amount;
                             try
                             {
@@ -1330,6 +1294,7 @@ namespace NaptienMaster.GSM
                     }
                     this.Message = "Tiến hành tính toán thẻ.";
                     ussd_balance_timeout = DateTime.Now;
+                    string card_amount = info.Payload.Card_Amount;
                     if (this.SimType == "TS")
                     {
                         this.resetCheckCharge(this.Port, this.rowGSMSelected);
@@ -1341,7 +1306,6 @@ namespace NaptienMaster.GSM
                                 string err_msg = "Sim bị mất kết nối trong quá trình nạp.";
                                 report = $"{{\"command\":\"REPORT_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":true,\"message\":\"Sim bị mất kết nối và không rõ kết quả nạp.\",\"extra_data\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"{err_msg}\",\"network\":\"{network}\",\"sim_type\":\"{sim_type}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tong no cuoc cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tong no cuoc cua ban la:{after_balance}\",\"sms_time\":\"\",\"card_real_amount\":\"0\"}}}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
                                 var report_sim_disconnect = JsonConvert.DeserializeObject(report);
-
                                 string res_report_sim_disconnect = JsonConvert.SerializeObject(report_sim_disconnect);
                                 if (Properties.Settings.Default.reportRechargeOrderList == null)
                                 {
@@ -1359,7 +1323,52 @@ namespace NaptienMaster.GSM
                         }
                         if (string.IsNullOrEmpty(this.ussd_charge))
                         {
-                            after_balance = before_balance;
+                            res = 1;
+                            LoggerManager.LogInfo(info_log);
+
+                            this.instance.dataGSM.BeginInvoke(new MethodInvoker(() =>
+                            {
+                                this.rowGSMSelected.Cells["status"].Style.BackColor = Color.LightYellow;
+                            }));
+
+                            if (this.login_instance.language == "English")
+                            {
+                                this.Status = "Undetermined";
+                            }
+                            else if (this.login_instance.language == "中文")
+                            {
+                                this.Status = "不确定";
+                            }
+                            else
+                            {
+                                this.Status = "Không xác định";
+                            }
+                            this.Message = "Không nhận được tin nhắn topup trả về";
+                            card_real_amount = "";
+                            try
+                            {
+                                trace_time_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
+                                reply = $"{{\"command\":\"UPDATE_RECHARGE_ORDER_RESULT_ACTION\",\"payload\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Không xác định được trạng thái thẻ nạp\",\"network\":\"{this.Telco}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"dd:MM:yyyy_hh:mm:ss\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{trace_time_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                                var json_object = JsonConvert.DeserializeObject(reply);
+                                string res_json = JsonConvert.SerializeObject(json_object, Formatting.Indented);
+                                LoggerManager.LogTrace(res_json);
+                                login_instance.wsHelper.sendDataToServer(res_json);
+
+                            }
+                            catch (Exception er)
+                            {
+                                LoggerManager.LogError("update_recharge_order:" + er.Message);
+                            }
+                            report = $"{{\"command\":\"REPORT_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":true,\"message\":\"Truy vấn trạng thái thẻ thành công.\",\"extra_data\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Nạp thẻ thành công.\",\"network\":\"{this.Telco}\",\"sim_type\":\"{sim_type}\",\"status\":\"2\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"sms_time\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                            var report_json_object = JsonConvert.DeserializeObject(report);
+                            string res_report = JsonConvert.SerializeObject(report_json_object);
+                            if (Properties.Settings.Default.reportRechargeOrderList == null)
+                            {
+                                Properties.Settings.Default.reportRechargeOrderList = new System.Collections.Specialized.StringCollection();
+                            }
+                            Properties.Settings.Default.reportRechargeOrderList.Add(res_report);
+                            Properties.Settings.Default.Save();
+                            this.instance.transactionUpdate();
                         }
                         else
                         {
@@ -1394,7 +1403,57 @@ namespace NaptienMaster.GSM
                         }
                         if (string.IsNullOrEmpty(this.ussd_balance))
                         {
-                            after_balance = before_balance;
+                            res = 1;
+                            LoggerManager.LogInfo(info_log);
+                       
+                                this.instance.dataGSM.BeginInvoke(new MethodInvoker(() =>
+                                {
+                                    this.rowGSMSelected.Cells["status"].Style.BackColor = Color.LightYellow;
+                                }));
+                            
+                            if (this.login_instance.language == "English")
+                            {
+                                this.Status = "Undetermined";
+                            }
+                            else if (this.login_instance.language == "中文")
+                            {
+                                this.Status = "不确定";
+                            }
+                            else
+                            {
+                                this.Status = "Không xác định";
+                            }
+                            this.Message = "Không nhận được tin nhắn topup trả về";
+                            card_real_amount = "";
+                            try
+                            {
+                                trace_time_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
+                                reply = $"{{\"command\":\"UPDATE_RECHARGE_ORDER_RESULT_ACTION\",\"payload\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Không xác định được trạng thái thẻ nạp\",\"network\":\"{this.Telco}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"dd:MM:yyyy_hh:mm:ss\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{trace_time_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+
+                                var json_object = JsonConvert.DeserializeObject(reply);
+                                string res_json = JsonConvert.SerializeObject(json_object, Formatting.Indented);
+                                LoggerManager.LogTrace(res_json);
+                                login_instance.wsHelper.sendDataToServer(res_json);
+
+                            }
+                            catch (Exception er)
+                            {
+                                LoggerManager.LogError("update_recharge_order:" + er.Message);
+                            }
+                            
+                            report = $"{{\"command\":\"REPORT_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":true,\"message\":\"Truy vấn trạng thái thẻ thành công.\",\"extra_data\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Nạp thẻ thành công.\",\"network\":\"{this.Telco}\",\"sim_type\":\"{sim_type}\",\"status\":\"2\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"sms_time\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                            
+                            var report_json_object = JsonConvert.DeserializeObject(report);
+
+                            string res_report = JsonConvert.SerializeObject(report_json_object);
+                            if (Properties.Settings.Default.reportRechargeOrderList == null)
+                            {
+                                Properties.Settings.Default.reportRechargeOrderList = new System.Collections.Specialized.StringCollection();
+                            }
+                            Properties.Settings.Default.reportRechargeOrderList.Add(res_report);
+                            Properties.Settings.Default.Save();
+                            this.instance.transactionUpdate();
+                            return res;
                         }
                         else
                         {
@@ -1433,6 +1492,7 @@ namespace NaptienMaster.GSM
                             string error_res = this.instance.pushSingleSimInfo(phone, 0);
                             this.login_instance.wsHelper.sendDataToServer(error_res);
                             return res;
+                           
                         }
                     }
                     double diff_value = 0;
@@ -1452,15 +1512,25 @@ namespace NaptienMaster.GSM
                         diff_value = after_balance_value - before_balance_value;
                     }
                     balance = after_balance_value.ToString();
-                    if (Math.Abs(diff_value) > 0)
+                    if (diff_value != 0)
                     {   //case nap thanh cong khi khong co ussd message tra ve
                         res = 1;
                         info_log = "Thành công:" + info.Payload.Phone + " " + info.Payload.Card_Serial + " " + info.Payload.Card_Code + " " + info.Payload.Card_Amount;
                         LoggerManager.LogInfo(info_log);
-                        this.instance.dataGSM.BeginInvoke(new MethodInvoker(() =>
+                        if (this.SimType == "TT" && diff_value > 0 && diff_value==double.Parse(this.instance.balance_standard(card_amount)))
                         {
-                            this.rowGSMSelected.Cells["status"].Style.BackColor = Color.GreenYellow;
-                        }));
+                            this.instance.dataGSM.BeginInvoke(new MethodInvoker(() =>
+                            {
+                                this.rowGSMSelected.Cells["status"].Style.BackColor = Color.GreenYellow;
+                            }));
+                        }
+                        else
+                        {
+                            this.instance.dataGSM.BeginInvoke(new MethodInvoker(() =>
+                            {
+                                this.rowGSMSelected.Cells["status"].Style.BackColor = Color.LightYellow;
+                            }));
+                        }
                         if (this.login_instance.language == "English")
                         {
                             this.Status = "Undetermined";
@@ -1474,17 +1544,39 @@ namespace NaptienMaster.GSM
                             this.Status = "Không xác định";
                         }
                         this.Message = "Không nhận được tin nhắn topup trả về";
-                        string card_amount = info.Payload.Card_Amount;
                         card_real_amount = "";
                         try
                         {
                             trace_time_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
 
-                            reply = $"{{\"command\":\"UPDATE_RECHARGE_ORDER_RESULT_ACTION\",\"payload\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Không xác định được trạng thái thẻ nạp\",\"network\":\"{this.Telco}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"dd:MM:yyyy_hh:mm:ss\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{trace_time_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
-                            var json_object = JsonConvert.DeserializeObject(reply);
-                            string res_json = JsonConvert.SerializeObject(json_object, Formatting.Indented);
-                            LoggerManager.LogTrace(res_json);
-                            login_instance.wsHelper.sendDataToServer(res_json);
+                            if (this.SimType == "TT" && diff_value > 0 && diff_value == double.Parse(this.instance.balance_standard(card_amount)))
+                            {
+                                this.Message = "Đã nạp thẻ thành công.";
+                                if (this.login_instance.language == "English")
+                                {
+                                    this.Status = "Success";
+                                }
+                                else if (this.login_instance.language == "中文")
+                                {
+                                    this.Status = "成功";
+                                }
+                                else
+                                {
+                                    this.Status = "Thành công";
+                                }
+                                
+                                card_real_amount = diff_value.ToString();
+                                
+                                reply = $"{{\"command\":\"UPDATE_RECHARGE_ORDER_RESULT_ACTION\",\"payload\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Đã nạp thẻ thành công.\",\"network\":\"{this.Telco}\",\"status\":\"2\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"dd:MM:yyyy_hh:mm:ss\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{trace_time_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                            }
+                            else
+                            {
+                                reply = $"{{\"command\":\"UPDATE_RECHARGE_ORDER_RESULT_ACTION\",\"payload\":{{\"phone\":\"{info.Payload.Phone}\",\"card_serial\":\"{info.Payload.Card_Serial}\",\"card_code\":\"{info.Payload.Card_Code}\",\"card_amount\":\"{info.Payload.Card_Amount}\",\"task_id\":\"{info.Payload.Task_Id}\",\"ussd_message\":\"Không xác định được trạng thái thẻ nạp\",\"network\":\"{this.Telco}\",\"status\":\"1\",\"extra_data\":{{\"before_balance\":\"{before_balance}\",\"after_balance\":\"{after_balance}\",\"balance\":\"{balance}\",\"before_balance_ussd\":\"Tai khoan chinh cua ban la:{before_balance}\",\"after_balance_ussd\":\"Tai khoan chinh cua ban la:{after_balance}\",\"dd:MM:yyyy_hh:mm:ss\":\"\",\"card_real_amount\":\"{card_real_amount}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{trace_time_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                            }
+                                var json_object = JsonConvert.DeserializeObject(reply);
+                                string res_json = JsonConvert.SerializeObject(json_object, Formatting.Indented);
+                                LoggerManager.LogTrace(res_json);
+                                login_instance.wsHelper.sendDataToServer(res_json);
                         }
                         catch (Exception er)
                         {
@@ -1650,7 +1742,7 @@ namespace NaptienMaster.GSM
             });
         }
         //ham xu ly event
-        public async void HandleSerialData(string input)
+        public void HandleSerialData(string input)
         {
             try
             {
@@ -1681,7 +1773,6 @@ namespace NaptienMaster.GSM
                     {
                         this.Status = "Sẵn sàng";
                         this.Message = loadMsg("Sim đã sẵn sàng");
-
                     }
                     this._isSim = true;
                     this.checkSimHasResult = true;
@@ -1782,6 +1873,7 @@ namespace NaptienMaster.GSM
                                 string[] newip = phone_split[1].Split(':');
                                 string phone_eleven = reg.Replace(newip[0], "");
                                 this.Phone = phone_eleven;
+                                
                             }
                             else
                             {
@@ -1916,8 +2008,8 @@ namespace NaptienMaster.GSM
                             if (!input.Contains("TKC") && this.first_request_sim_type!="TT")
                             {
                                 this.SimType = "TS";
-                                this.TKC = "null";
-                                this.Expire = "null";
+                                this.TKC = "0";
+                                this.Expire = "0";
                             }
                             else
                             {
@@ -1930,6 +2022,7 @@ namespace NaptienMaster.GSM
                                     this.SimType = "TT";
                                     this.first_request_sim_type = "TT";
                                 }
+                               
                             }
                         }
                         else if (this.Telco == "VINAPHONE")
@@ -2157,6 +2250,7 @@ namespace NaptienMaster.GSM
                         string txt1_1 = regex.Replace(txt1, "");
                         Regex phone_reg = new Regex("[^0-9]");
                         string test_phone = regex.Replace(this.Phone, "");
+                       
                         if (this.Phone.Length != test_phone.Length)
                         {
                             return;
@@ -2186,31 +2280,30 @@ namespace NaptienMaster.GSM
                             else if(message_sim_type.Contains("Xin vui long kiem tra lai"))
                             {
                                 this.SimType = "TS";
-                                this.TKC = "null";
-                                this.Expire = "null";
+                                this.TKC = "0";
+                                this.Expire = "0";
                             }
                         }
-                        else if(txt2 == "9223")
-                        {   sms_response_time= TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
-                            Regex regex_ussd = new Regex(@"[\d]+\s");
+                        else if(txt2 == "9223" || txt2=="+9223" || txt2.Contains("9223"))
+                        {   
+                            sms_response_time= TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
+                            Regex regex_ussd = new Regex(@"[\d.,]+\s");
                             Match match_value=regex_ussd.Match(txt1);
                             if(match_value.Success) 
-                            { 
-                                Regex reg_card_amount = new Regex(@"[^\d,]");
-                                after_card_sms = match_value.Value;
-                                after_card_real_amount = reg_card_amount.Replace(match_value.Value, "");
+                            {
+                                after_card_sms = txt1;
+                                after_card_real_amount = (match_value.Value).Trim();
                             }
                         }
                         else if(txt2=="MobiFone")
                         {
                             if(txt1.Contains("da nap"))
                             {
-                                prepaid_topup = txt1;
-                                
+                                prepaid_topup = txt1;                                
                                 this.sms_response_time = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
                             }
                         }
-                       
+                        
                         string re = txt2 + "@" + txt1_1 + "@" + txt3 + "@" + phone_push;
                         string re_ver1 = txt2 + "@" + txt1_1 + "@" + txt3 + "@" + this.Phone;
                     }

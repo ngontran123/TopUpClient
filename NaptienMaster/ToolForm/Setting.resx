@@ -165,9 +165,6 @@
   <data name="kryptonButton2.Values.Text" xml:space="preserve">
     <value>Hủy</value>
   </data>
-  <data name="kryptonLabel3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="kryptonButton1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -2438,8 +2435,8 @@
   <data name="&gt;&gt;kryptonLabel2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="kryptonPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>664, 453</value>
+  <data name="kryptonButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="kryptonLabel2.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value />
@@ -2504,9 +2501,6 @@
   <data name="kryptonLabel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 281</value>
   </data>
-  <data name="languageComboBox.Items" xml:space="preserve">
-    <value>Tiếng Việt</value>
-  </data>
   <data name="blackList.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 64</value>
   </data>
@@ -2515,9 +2509,6 @@
   </data>
   <data name="&gt;&gt;kryptonPanel1.Name" xml:space="preserve">
     <value>kryptonPanel1</value>
-  </data>
-  <data name="&gt;&gt;kryptonLabel1.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonLabel, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="&gt;&gt;kryptonLabel1.Name" xml:space="preserve">
     <value>kryptonLabel1</value>
@@ -2530,6 +2521,9 @@
   </data>
   <data name="kryptonButton2.Location" type="System.Drawing.Point, System.Drawing">
     <value>345, 372</value>
+  </data>
+  <data name="&gt;&gt;kryptonBreadCrumb1.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonBreadCrumb, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="baudrateList.Items" xml:space="preserve">
     <value>4800</value>
@@ -2549,14 +2543,20 @@
   <data name="&gt;&gt;blackList.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="baudrateList.Items3" xml:space="preserve">
+    <value>38400</value>
+  </data>
+  <data name="kryptonLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="kryptonLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="&gt;&gt;kryptonBreadCrumb1.Type" xml:space="preserve">
-    <value>Krypton.Toolkit.KryptonBreadCrumb, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  <data name="languageComboBox.Items" xml:space="preserve">
+    <value>Tiếng Việt</value>
   </data>
-  <data name="kryptonButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 47</value>
+  <data name="&gt;&gt;kryptonBreadCrumb1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="baudrateList.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 279</value>
@@ -2584,6 +2584,9 @@
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Setting</value>
   </data>
   <data name="&gt;&gt;baudrateList.Name" xml:space="preserve">
     <value>baudrateList</value>
@@ -2618,20 +2621,17 @@
   <data name="kryptonPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="kryptonLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 24</value>
-  </data>
   <data name="&gt;&gt;kryptonLabel3.Parent" xml:space="preserve">
     <value>kryptonPanel1</value>
   </data>
   <data name="kryptonLabel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>368, 279</value>
   </data>
-  <data name="kryptonButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="kryptonButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 47</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Setting</value>
+  <data name="&gt;&gt;kryptonLabel1.Type" xml:space="preserve">
+    <value>Krypton.Toolkit.KryptonLabel, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
   </data>
   <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>458, 278</value>
@@ -2675,11 +2675,11 @@
   <data name="kryptonBreadCrumb1.RootItem.ShortText" xml:space="preserve">
     <value>Root</value>
   </data>
-  <data name="baudrateList.Items1" xml:space="preserve">
-    <value>9600</value>
-  </data>
   <data name="&gt;&gt;baudrateList.Type" xml:space="preserve">
     <value>Krypton.Toolkit.KryptonComboBox, Krypton.Toolkit, Version=70.22.11.312, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e</value>
+  </data>
+  <data name="kryptonBreadCrumb1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="blackList.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
     <value>Horizontal</value>
@@ -2687,8 +2687,8 @@
   <data name="kryptonButton2.Values.ExtraText" xml:space="preserve">
     <value />
   </data>
-  <data name="kryptonLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="kryptonLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="kryptonLabel1.Values.ExtraText" xml:space="preserve">
     <value />
@@ -2696,14 +2696,14 @@
   <data name="&gt;&gt;kryptonPanel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;kryptonBreadCrumb1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="baudrateList.Items1" xml:space="preserve">
+    <value>9600</value>
   </data>
   <data name="kryptonLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 24</value>
   </data>
-  <data name="kryptonBreadCrumb1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="kryptonPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>664, 453</value>
   </data>
   <data name="baudrateList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -2711,8 +2711,8 @@
   <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="baudrateList.Items3" xml:space="preserve">
-    <value>38400</value>
+  <data name="kryptonLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 24</value>
   </data>
   <data name="baudrateList.Items2" xml:space="preserve">
     <value>19200</value>

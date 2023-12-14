@@ -34,6 +34,7 @@ namespace NaptienMaster
         private static Form1 instance;
         public string baudrate = "";
         public string blackListPort = "";
+        
         public int new_port_num = -1;
         private int num_of_sim = 0;
         private int max_num_of_sim = 0;
@@ -176,98 +177,106 @@ namespace NaptienMaster
         private void settingBtn_Click(object sender, EventArgs e)
         {
         }
-        public async void handlingServerEvent()
-        {
-              handle_loop:
-                if (login_instance.wsHelper.Client_List_Amount.Count>0)
-                {   
+        public async Task handlingServerEvent()
+        { 
+            handle_loop:
+            try
+            {
+                if (login_instance.wsHelper.Client_List_Amount.Count > 0)
+                {
                     var client_amount_info_list = login_instance.wsHelper.Client_List_Amount;
-                 
-                        foreach(var client_amount in client_amount_info_list)
-                        {    
-                            var res_client_amount = JsonConvert.DeserializeObject<ClientAmount>(client_amount);
-                            string phone_update = res_client_amount.Payload.Phone;
-                            string recharged = res_client_amount.Payload.Amount_Recharged;
-                            string need_recharge = res_client_amount.Payload.Amount_Need_Recharge;
-                            var num = updateClientAmountInfoAction(phone_update, recharged, need_recharge).First();
-                            int num_res = num.Value;
-                            string telco_res = num.Key;
-                            sendUpdateClientAmountRes(num_res, phone_update,telco_res);
-                            await Task.Delay(500);
-                       login_instance.wsHelper.Client_List_Amount=login_instance.wsHelper.Client_List_Amount.Remove(client_amount);
-                        }
+
+                    foreach (var client_amount in client_amount_info_list)
+                    {
+                        var res_client_amount = JsonConvert.DeserializeObject<ClientAmount>(client_amount);
+                        string phone_update = res_client_amount.Payload.Phone;
+                        string recharged = res_client_amount.Payload.Amount_Recharged;
+                        string need_recharge = res_client_amount.Payload.Amount_Need_Recharge;
+                        var num = updateClientAmountInfoAction(phone_update, recharged, need_recharge).First();
+                        int num_res = num.Value;
+                        string telco_res = num.Key;
+                        sendUpdateClientAmountRes(num_res, phone_update, telco_res);
+                        await Task.Delay(500);
+                        login_instance.wsHelper.Client_List_Amount = login_instance.wsHelper.Client_List_Amount.Remove(client_amount);
                     }
+                }
                 await Task.Delay(100);
-               if(login_instance.wsHelper.Balance_Info_List.Count>0)
+                if (login_instance.wsHelper.Balance_Info_List.Count > 0)
                 {
                     var balance_info_list = login_instance.wsHelper.Balance_Info_List;
-                    foreach(var balance_info in balance_info_list)
-                    {   
+                    foreach (var balance_info in balance_info_list)
+                    {
                         var res_balance_info = JsonConvert.DeserializeObject<Balance_Request>(balance_info);
                         string phone_balance = res_balance_info.Payload.Phone;
-                        int num=await sendBalanceInfoAction(phone_balance);
+                        int num = await sendBalanceInfoAction(phone_balance);
                         await Task.Delay(500);
                         login_instance.wsHelper.Balance_Info_List = login_instance.wsHelper.Balance_Info_List.Remove(balance_info);
                     }
                 }
                 await Task.Delay(100);
-               if(login_instance.wsHelper.Recharge_Order_List.Count>0)
-                { 
-                 var recharge_order_list = login_instance.wsHelper.Recharge_Order_List;
-                foreach (var order in recharge_order_list)
+                if (login_instance.wsHelper.Recharge_Order_List.Count > 0)
                 {
-                    new Task(async () =>
-                {
-                    try
+                    var recharge_order_list = login_instance.wsHelper.Recharge_Order_List;
+                    foreach (var order in recharge_order_list)
                     {
-                        var res_order_info = JsonConvert.DeserializeObject<RechargeOrder>(order);
-                        login_instance.wsHelper.Recharge_Order_List = login_instance.wsHelper.Recharge_Order_List.Remove(order);
-                        string phone_order = res_order_info.Payload.Phone;
-                        string code = res_order_info.Payload.Card_Code;
-                        GsmObject gsm = gsmObject.SingleOrDefault(p => p.Phone == phone_order);
-                        if (gsm != null)
-                        {
-                            int val = await gsm.OrderHandling(phone_order, code, res_order_info);
-                        }
-                        else
-                        {
-                            Guid guid = Guid.NewGuid();
-                            DateTime datetime_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
-                            string reply_push_recharge = $"{{\"command\":\"PUSH_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":false,\"message\":\"Sim này không tồn tại.\",\"extra_data\":{{\"phone\":\"{res_order_info.Payload.Phone}\",\"card_serial\":\"{res_order_info.Payload.Card_Serial}\",\"card_code\":\"{res_order_info.Payload.Card_Code}\",\"card_amount\":\"{res_order_info.Payload.Card_Amount}\",\"task_id\":\"{res_order_info.Payload.Task_Id}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
-                            var json_object_push_recharge = JsonConvert.DeserializeObject(reply_push_recharge);
-                            string res_json_push_recharge = JsonConvert.SerializeObject(json_object_push_recharge, Formatting.Indented);
-                            login_instance.wsHelper.sendDataToServer(res_json_push_recharge);
-                            return;
-                        }
-                        gsm = null;
-                    }
-                    catch(Exception er)
+                        new Task(async () =>
                     {
-                        LoggerManager.LogError("order_object_handling:" + er.Message);
-                        this.loadData("order_object_handling:" + er.Message);
+                        try
+                        {
+                            var res_order_info = JsonConvert.DeserializeObject<RechargeOrder>(order);
+                            login_instance.wsHelper.Recharge_Order_List = login_instance.wsHelper.Recharge_Order_List.Remove(order);
+                            string phone_order = res_order_info.Payload.Phone;
+                            string code = res_order_info.Payload.Card_Code;
+                            GsmObject gsm = gsmObject.SingleOrDefault(p => p.Phone == phone_order);
+                            if (gsm != null)
+                            {
+                                int val = await gsm.OrderHandling(phone_order, code, res_order_info);
+                            }
+                            else
+                            {
+                                Guid guid = Guid.NewGuid();
+                                DateTime datetime_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
+                                string reply_push_recharge = $"{{\"command\":\"PUSH_RECHARGE_ORDER_RESPONSE_ACTION\",\"payload\":{{\"success\":false,\"message\":\"Sim này không tồn tại.\",\"extra_data\":{{\"phone\":\"{res_order_info.Payload.Phone}\",\"card_serial\":\"{res_order_info.Payload.Card_Serial}\",\"card_code\":\"{res_order_info.Payload.Card_Code}\",\"card_amount\":\"{res_order_info.Payload.Card_Amount}\",\"task_id\":\"{res_order_info.Payload.Task_Id}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{datetime_vietnam.ToString("dd/MM/yyyy HH:mm:ss")}\",\"trace_side\":\"cs\",\"min_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_MIN_VERSION")}\",\"current_version_code\":\"{Environment.GetEnvironmentVariable("SERVER_CURRENT_VERSION")}\",\"current_agent_version\":\"{Environment.GetEnvironmentVariable("AGENT_VERSION")}\"}}";
+                                var json_object_push_recharge = JsonConvert.DeserializeObject(reply_push_recharge);
+                                string res_json_push_recharge = JsonConvert.SerializeObject(json_object_push_recharge, Formatting.Indented);
+                                login_instance.wsHelper.sendDataToServer(res_json_push_recharge);
+                                return;
+                            }
+                            gsm = null;
+                            res_order_info = null;
+                        }
+                        catch (Exception er)
+                        {
+                            LoggerManager.LogError("order_object_handling:" + er.Message);
+                            this.loadData("order_object_handling:" + er.Message);
+                        }
+                    }).Start();
+                        await Task.Delay(1000);
                     }
-                }).Start();
-                 await Task.Delay(1000);
                 }
-                }
-             if(login_instance.wsHelper.Report_Recharge_Order_List.Count>0)
-            {
-                var report_recharge_order_list = login_instance.wsHelper.Report_Recharge_Order_List;
-                foreach(var report_order in report_recharge_order_list)
+                if(login_instance.wsHelper.Report_Recharge_Order_List.Count > 0)
                 {
-                    var report_info = JsonConvert.DeserializeObject<ReportRechargeOrder>(report_order);
-                    login_instance.wsHelper.Report_Recharge_Order_List = login_instance.wsHelper.Report_Recharge_Order_List.Remove(report_order);
-                    string report_phone = report_info.Payload.Phone;
-                    string card_serial = report_info.Payload.Card_Serial;
-                    string card_code = report_info.Payload.Card_Code;
-                    string card_amount = report_info.Payload.Card_Amount;
-                    string task_id = report_info.Payload.Task_Id;
-                    int val = await reportOrderHandling(report_phone, card_serial, card_code, card_amount,task_id);
-                    await Task.Delay(500);
+                    var report_recharge_order_list = login_instance.wsHelper.Report_Recharge_Order_List;
+                    foreach (var report_order in report_recharge_order_list)
+                    {
+                        var report_info = JsonConvert.DeserializeObject<ReportRechargeOrder>(report_order);
+                        login_instance.wsHelper.Report_Recharge_Order_List = login_instance.wsHelper.Report_Recharge_Order_List.Remove(report_order);
+                        string report_phone = report_info.Payload.Phone;
+                        string card_serial = report_info.Payload.Card_Serial;
+                        string card_code = report_info.Payload.Card_Code;
+                        string card_amount = report_info.Payload.Card_Amount;
+                        string task_id = report_info.Payload.Task_Id;
+                        int val = await reportOrderHandling(report_phone, card_serial, card_code, card_amount, task_id);
+                        await Task.Delay(500);
+                    }
                 }
+                await Task.Delay(5000);
+                goto handle_loop;
             }
-            await Task.Delay(5000);
-            goto handle_loop;
+            catch(Exception er)
+            {
+                LoggerManager.LogError("Error in handleEvent:" + er.Message);
+            }
         }
 
        
@@ -1137,9 +1146,11 @@ namespace NaptienMaster
                             string card_code_order = transaction_detail.Payload.Extra_Data.Card_Code;
                             string task_id_order = transaction_detail.Payload.Extra_Data.Task_Id;
                             string sim_type_order = transaction_detail.Payload.Extra_Data.Sim_Type;
+                            string sms_response = transaction_detail.Payload.Extra_Data.Extra_Data.Sms_Time;
                             this.transactionGridView.Rows[index].Cells["phone_trans"].Value = phone_order;
                             this.transactionGridView.Rows[index].Cells["charge_before"].Value = before_balance;
                             this.transactionGridView.Rows[index].Cells["charge_after"].Value = after_balance;
+                            this.transactionGridView.Rows[index].Cells["time_sms"].Value = sms_response;
                             this.transactionGridView.Rows[index].Cells["charged_time"].Value = date_order;
                             this.transactionGridView.Rows[index].Cells["status_charge"].Value = status;
                             this.transactionGridView.Rows[index].Cells["money_topup"].Value = card_amount_order;

@@ -117,8 +117,8 @@ namespace NaptienMaster
                 LoggerManager.LogError("receive"+er.Message);
             }
             try
-
-            {   if (data_receive != null)
+            {   
+                if (data_receive != null)
                 {
                     if (data_receive.Contains("command"))
                     {
@@ -182,7 +182,7 @@ namespace NaptienMaster
                 res = $"{{\"command\":\"UPDATE_CLIENT_AMOUNT_INFO_RESPONSE_ACTION\",\"payload\":\"{{\"success\":\"true\",\"message\":\"Lưu dữ liệu thành công\",\"extra_data\":{{\"phone\":\"{phone}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{date_time}\",\"trace_side\":\"cs\"}}";
             }
             else
-            {
+            { 
                 res = $"{{\"command\":\"UPDATE_CLIENT_AMOUNT_INFO_RESPONSE_ACTION\",\"payload\":\"{{\"success\":\"false\",\"message\":\"Có lỗi xảy ra\",\"extra_data\":{{\"phone\":\"{phone}\"}}}},\"trace_id\":\"{guid}\",\"trace_time\":\"{date_time}\",\"trace_side\":\"cs\"}}";
             }
             var json_ob = JsonConvert.DeserializeObject(res);
@@ -209,7 +209,7 @@ namespace NaptienMaster
                 string trace_id = guuid.ToString();
                 DateTime datetime_vietnam = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnam_standard_time);
                 string trace_time = datetime_vietnam.ToString("dd/MM/yyyy HH:mm:ss");
-                string trace_side = "cs";
+                string trace_side = "cs";               
                 string pcId = pc_id;
                 string token = authen_token;
                 LoginPayLoad payload = new LoginPayLoad(pcId, token);
@@ -256,7 +256,10 @@ namespace NaptienMaster
                         if(checkConnectAlive() == true && is_login)
                         {  if (is_resend_login == true)
                             {
+                                is_connect = true;
                                 is_resend_login = false;
+                                LoggerManager.LogConnectTrace("Connection has been re-establish");
+                                LoggerManager.LogInfo("Connection has been re-established.");
                                 string token = Environment.GetEnvironmentVariable("TOKEN");
                                 string pc_id = Environment.GetEnvironmentVariable("PC_ID");
                                 this.pushLoginToken(pc_id, token);
@@ -269,7 +272,7 @@ namespace NaptienMaster
             recheck_timer.Start();
         }
        public enum Command_List
-        {
+        {  
             AUTH_ACTION_REPLY,
             REQ_BALANCE_INFO_ACTION,
             PUSH_SIM_PORT_REPLY_ACTION,
